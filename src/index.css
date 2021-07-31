@@ -201,6 +201,7 @@ body {
 #letter-msgs, #artbook {
     background-size: contain;
     background-repeat: repeat;
+    border-top: 20px solid papayawhip;
     padding: 1px;
 }
 
