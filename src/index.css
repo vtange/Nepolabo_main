@@ -20,9 +20,6 @@ body {
 
 #bg {
     align-items: center;
-    background: url('./splash.webp');
-    background-repeat: no-repeat;
-    background-size: contain;
     display: flex;
     height: 100%;
     justify-content: center;
@@ -88,11 +85,35 @@ body {
     pointer-events: none;
 }
 
-#track-cake-art {
-    height: 56.25vw;
+#links-main {
+    position: relative;
 }
 
-#welcome-msg {
+#links-main .bookend-bg {
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+}
+
+#links-main .bookend-bg:first-child {
+    top: 0;
+}
+
+#links-main .bookend-bg:last-child {
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+#track-cake-art {
+    background-image: url('./splash.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 56.25vw;
+    width: 100%;
+}
+
+.full-scrn-center-align {
     display: flex;
     width: 100%;
     height: 100vh;
@@ -100,12 +121,16 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+#welcome-msg {
+    display: none;
+    background: rgba(0,0,0,0.5);
+    color: white;
     font-size: 2rem;
     padding-left: 5%;
     padding-right: 5%;
     position: absolute;
-    color: white;
-    text-shadow: 0 0 4px rgb(187, 223, 255);
 }
 
 #scroll-arrow-hint span {

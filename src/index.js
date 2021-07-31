@@ -12,7 +12,7 @@ setTimeout(function(){
             white_full.style.opacity = 0;
         }, 500);
     }, 1000);
-}, 1000);
+}, 0);
 
 function init() {
     AOS.init({
