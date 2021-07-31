@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ねぽらぼ一周年記念プロジェクト NePoLaBo 1st Anniversary Celebration Project</title>
+    <meta name="description" content="ねぽらぼ一周年おめでとう！！！！！">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="ねぽらぼ一周年記念プロジェクト NePoLaBo 1st Anniversary Celebration Project" />
+    <meta property="og:description" content="ねぽらぼ一周年おめでとう！！！！！" />
+    <meta property="og:image" content="android-chrome-512x512.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vtange.github.io/messages-page/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ねぽらぼ一周年記念プロジェクト NePoLaBo 1st Anniversary Celebration Project">
+    <meta name="twitter:image" content="android-chrome-512x512.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Serif+JP&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    {{!-- <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css"> --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
+        integrity="sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.0/simple-lightbox.min.css"
+        integrity="sha512-FHwwMXxhAWjVhJyEgmmPg/aJ3BRmsOavHBV6yMK55Mz0rycBZcRmSowqij+ncd/JPtOzmUMZx7ZIRnGyqIE/1A=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="dist/index.css">
+
+<body>
+    <div id="ie11-cover"><p>Please use a different web browser to see this site.</p><p>このサイトを見るために他のウェブブラウザーを使ってください。</p></div>
+    <div id="nojs-cover"><p>Please turn on Javascript to fully access this site's features.</p><p>このサイトの全ての機能を利用するためにはJavaScriptを有効にする必要があります。</p></div>
+    <!-- transitionary white screen for door open animation -->
+    <div id="white-full"></div>
+    <div id="content">
+        <!-- background of page -->
+        <div id="bg-container">
+            <div id="bg">
+            </div>
+        </div>
+
+        <section class="full-scrn-center-align" id="welcome-msg">
+            <p lang="ja" data-aos="fade-down">ねぽらぼの皆、一周年おめでとう!</p>
+            <p lang="ja" data-aos="fade-down">私たちからのこの小さな</p>
+            <p lang="ja" data-aos="fade-down">プレゼントを楽しんでください</p>
+            <!-- Three arrows (one per span, made with 45deg rotated box with partial border) that animate via CSS -->
+            <div id="scroll-arrow-hint">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+
+        <section class="full-scrn-center-align" id="links-main">
+            <img class="bookend-bg" src="dist/img/cake_art_bg.jpg" />
+            <div id="track-cake-art">
+            </div>
+            <img class="bookend-bg" src="dist/img/cake_art_bg.jpg" />
+        </section>
+
+        <section id="letter-msgs">
+            <div class="sect-title" data-aos="fade-up">
+                <h1>Messages</h1>
+                <h3 lang="ja">手紙</h3>
+                <div class="sect-title-deco"></div>
+            </div>
+            <div class="card-columns">
+                {{#each messages}}
+                {{#if message}}
+                <div class="letter-msg-card-container" data-aos="fade-up">
+                    <div class="letter-msg-card card">
+                        <div class="msg-deco"></div>
+                        <div class="sender-details">
+                            <div class="sender-name-container">
+                                <span class="sender-name">{{username}}</span>
+                                {{#with twitter}}
+                                <span class="twitter-name text-muted">@{{this}}</span>
+                                {{/with}}
+                            </div>
+                                <div class="stamp-outer">
+                                {{#if country_code}}
+                                    <div class="stamp-inner" data-code="{{country_code}}">
+                                        <span class="flag-icon flag-icon-{{country_code}}" title="{{country_name}}"
+                                            alt="{{country_name}}"></span>
+                                        <span class="stamp-amt">
+                                            {{#if (eq country_code "ca")}}&#127809;
+                                            {{else}}{{country_postage}}
+                                            {{/if}}
+                                        </span>
+                                        <div class="stamp-deco"></div>
+                                        <div class="country-name">{{country_name_stamp}}</div>
+                                    </div>
+                                {{else}}
+                                    <div class="stamp-inner">
+                                        <span class="stamp-amt">
+                                            100
+                                        </span>
+                                        <div class="stamp-deco"></div>
+                                        <div class="country-name">2021</div>
+                                    </div>
+                                {{/if}}
+                                </div>
+                        </div>
+                        <div class="letter-msg">
+                            <blockquote class="blockquote mb-0" {{#if isMsgInJP}}lang="ja" {{/if}}>
+                                <!-- htmlmin:ignore -->
+                                <p>{{message}}</p>
+                                <!-- htmlmin:ignore -->
+                            </blockquote>
+                            {{#if message_jp}}
+                            <hr>
+                            <blockquote class="blockquote mb-0" lang="ja">
+                                <!-- htmlmin:ignore -->
+                                <p>{{message_jp}}</p>
+                                <!-- htmlmin:ignore -->
+                            </blockquote>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{/each}}
+            </div>
+        </section>
+
+        <section id="artbook">
+            <div class="sect-title" data-aos="fade-up">
+                <h1>Artbook</h1>
+                <h5>(Click to enlarge)</h5>
+                <h3 lang="ja">画集</h3>
+                <h5>（写真をクリックすると拡大できます）</h5>
+                <div class="sect-title-deco"></div>
+            </div>
+            <div id="artbook-gallery">
+                {{#each artbook_data}}
+                <a href="{{fullpage}}" data-aos="fade-up">
+                    <img class="artbook-page" srcset="{{thumbnail_small}} 150w, {{thumbnail}} 500w" sizes="(max-width: 700px) 150px, 500px" src="{{thumbnail}}" alt="" title="" />
+                </a>
+                {{/each}}
+            </div>
+        </section>
+
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" type="application/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.0/simple-lightbox.min.js"
+        integrity="sha512-ZajFBgnksNp8Rj+AbmYe8ueOu45HiSjtf3QpqnRbHlq719m6VK0FkbYIqQ8wEnlVuJ1i9pC+z6Z9ewmDnUTMCg=="
+        crossorigin="anonymous" type="application/javascript"></script>
+    <script src="dist/index.js" type="application/javascript"></script>
+</body>
+
+</html>
