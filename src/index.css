@@ -9,17 +9,16 @@ body {
 #bg-container {
     width: 100%;
     height: 100%;
-    /* -webkit-transform: translateZ(0);
-    transform: translateZ(0); */
-    z-index: -1;
     align-items: center;
     justify-content: center;
     position: absolute;
-    filter: brightness(0.7);
 }
 
 #bg {
     align-items: center;
+    background: url(img/chocostripe.png);
+    background-repeat: repeat;
+    background-size: auto;
     display: flex;
     height: 100%;
     justify-content: center;
@@ -104,13 +103,8 @@ body {
     transform: rotate(180deg);
 }
 
-#track-cake-art {
-    background-image: url("./splash.webp");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 56.25vw;
-    width: 100%;
+.column {
+    z-index: 2;
 }
 
 .full-scrn-center-align {
@@ -186,29 +180,12 @@ body {
     text-align: center;
 }
 
-.sect-title-deco {
-    background-image: url("img/lamy.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 8rem;
-    height: 10rem;
-    position: absolute;
-    z-index: -1;
-    right: 9px;
-    bottom: -36px;
-}
-
 #letter-msgs,
 #artbook {
     background-size: contain;
     background-repeat: repeat;
     border-top: 20px solid papayawhip;
     padding: 1px;
-}
-
-#content.open #letter-msgs,
-#content.open #artbook {
-    background-image: url("img/chocostripe.png");
 }
 
 #artbook {
