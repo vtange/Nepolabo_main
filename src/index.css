@@ -73,7 +73,7 @@ h5 {
     opacity: 0;
     top: 2rem;
     transform: translatex(-50%);
-    z-index: 99;
+    z-index: 999999;
 }
 
 @keyframes slowShow {
@@ -116,6 +116,7 @@ h5 {
 }
 
 .column {
+    position: relative;
     z-index: 2;
 }
 
@@ -143,8 +144,8 @@ h5 {
     display: block;
     width: 24px;
     height: 24px;
-    border-bottom: 5px solid rgb(134, 196, 255);
-    border-right: 5px solid rgb(134, 196, 255);
+    border-bottom: 5px solid #ffbbd7;
+    border-right: 5px solid #ffbbd7;
     transform: rotate(45deg);
     margin: -10px;
     animation: scrolldown 2s infinite;
