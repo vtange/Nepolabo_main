@@ -125,6 +125,7 @@ h5, .paragraph-msg {
 #welcome-msg {
     bottom: 0px;
     position: absolute;
+    transform: translate(10px, -10px);
     z-index: 9;
 }
 
