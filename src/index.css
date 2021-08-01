@@ -129,6 +129,10 @@ h5, .paragraph-msg {
     z-index: 9;
 }
 
+#scroll-arrow-hint {
+    transform: scale(.65);
+}
+
 #scroll-arrow-hint span {
     display: block;
     width: 24px;
