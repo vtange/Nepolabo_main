@@ -1,18 +1,11 @@
 document.getElementById("nojs-cover").style.display = "none";
 
-var white_full = document.getElementById("white-full");
 var content = document.getElementById('content');
 
 setTimeout(function(){
-    white_full.style.opacity = 1;
-    setTimeout(function(){
-        content.classList.add('open');
-        init();
-        setTimeout(function(){
-            white_full.style.opacity = 0;
-        }, 500);
-    }, 1000);
-}, 0);
+    content.classList.add('open');
+    init();
+}, 1000);
 
 function init() {
     AOS.init({

@@ -92,8 +92,8 @@ body::-webkit-scrollbar {
   background: linear-gradient(0deg, rgba(36, 14, 20, 0.8) 0%, rgba(48, 37, 37, 0.8) 84%);
   border-radius: 20px;
   border: 3px ridge rosybrown;
-  height: 100vh;
   overflow: hidden;
+  padding: 2rem;
   /* overflow-y: scroll; */
   /* Track */
   /* Handle */
