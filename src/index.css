@@ -181,7 +181,7 @@ body:not(.active) #welcome-msg {
 
 .sect-title {
     box-shadow: 5px 8px 20px -5px rgba(10, 10, 10, 0.75);
-    border-color: rgb(187, 223, 255);
+    border-color: #ffbbd7;
     border-radius: 0.25rem;
     border-style: solid;
     border-width: 0.5rem;
@@ -221,10 +221,10 @@ body:not(.active) #welcome-msg {
 .letter-msg-card {
     padding: 10px;
     box-shadow: 5px 8px 20px -5px rgba(10, 10, 10, 0.75);
-    border-color: aliceblue;
-    border-radius: 0;
-    border-style: dashed;
-    border-width: thick;
+    background: url(./img/cake.png);
+    background-size: cover;
+    background-origin: border-box;
+    border: 1rem solid rgba(50,0,0,0.5);
 }
 
 .letter-msg-card.card {
