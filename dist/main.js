@@ -1,16 +1,16 @@
-$(window).on('load', function () {
-    $(window).delay(800).queue(function () {
-        $('.op_anim').addClass('open');
-        $('body').addClass('active');
+document.addEventListener("DOMContentLoaded", function () {
+    window.setTimeout(function(){
+        document.querySelector('.op_anim').classList.add('open');
+        document.querySelector('body').classList.add('active');
+    },800);
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
     });
 });
 
-$(document).ready(function () {
-    $(this).scrollTop(0);
-});
-
 var scrollToTopBtn = document.querySelector(".scroll-to-top")
-var rootElement = document.documentElement
+var rootElement = document.documentElement;
 
 function handleScroll() {
     // Do something on scroll
