@@ -124,9 +124,18 @@ h5, .paragraph-msg {
 
 #welcome-msg {
     bottom: 0px;
+    left: 50%;
     position: absolute;
-    transform: translate(10px, -10px);
+    transform: translate(-50%, -10px);
     z-index: 9;
+}
+
+.paragraph-msg {
+    min-width: 300px;
+}
+
+#sidetile > p {
+    display: none;
 }
 
 #scroll-arrow-hint {
@@ -557,6 +566,9 @@ blockquote > p {
     }
     #welcome-msg {
         font-size: 2.5rem;
+        left: 0;
+        position: absolute;
+        transform: translate(10vw, -10px);
     }
     /*=Box=*/
     .wrapper {
@@ -570,6 +582,10 @@ blockquote > p {
 @media (min-width: 1000px) {
     #welcome-msg {
         font-size: 3rem;
+    }
+
+    #sidetile > p {
+        display: block
     }
 
     #letter-msgs .card-columns {
