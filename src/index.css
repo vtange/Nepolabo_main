@@ -127,7 +127,11 @@ h5, .paragraph-msg {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -10px);
-    z-index: 9;
+    z-index: 3;
+}
+
+body:not(.active) #welcome-msg {
+    display: none;
 }
 
 .paragraph-msg {
