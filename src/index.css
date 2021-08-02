@@ -609,6 +609,9 @@ transition: all 100ms ease-in-out;
     .column > svg {
         transform: translateY(0);
     }
+    #main-page #sidetile {
+        padding: 2rem;
+    }
     #letter-msgs .card-columns {
         column-count: 1;
     }
