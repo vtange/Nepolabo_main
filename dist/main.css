@@ -75,33 +75,15 @@ body::-webkit-scrollbar {
   opacity: 0;
 }
 
-/* .button{
-    position: absolute;
-    top:50%;
-    left:50%;
-}
-*/
-
-/* .open {
-   transform: translate(100vw,0);
-
-} */
-
-.columns .column:nth-of-type(1) #sidetile {
+#sidetile {
   background: rgba(34, 78, 95, 0.5);
   background: linear-gradient(0deg, rgba(36, 14, 20, 0.8) 0%, rgba(48, 37, 37, 0.8) 84%);
   border-radius: 20px;
   border: 3px ridge rosybrown;
   overflow: hidden;
-  padding: 2rem;
-  /* overflow-y: scroll; */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
+  padding: 2rem 10px;
 }
 .columns .column:nth-of-type(1) #sidetile::-webkit-scrollbar {
-  /* display: none;
-  */
   width: 3px;
 }
 .columns .column:nth-of-type(1) #sidetile::-webkit-scrollbar-track {
@@ -110,8 +92,6 @@ body::-webkit-scrollbar {
 }
 .columns .column:nth-of-type(1) #sidetile::-webkit-scrollbar-thumb {
   background-color: #a83967;
-  /* background: linear-gradient(180deg, rgba(237,124,172,1) 0%, rgba(235,230,228,1) 52%, rgba(195,231,243,1) 80%);
-  */
   border-radius: 10px;
 }
 .columns .column:nth-of-type(1) #sidetile::-webkit-scrollbar-thumb:hover {
@@ -146,23 +126,12 @@ a:hover .hover-path {
   stroke-dasharray: 2000, 2000;
   stroke-dashoffset: 2000;
   animation: line-anim 1.5s cubic-bezier(0.65, 1.42, 0.68, 0.68) forwards;
-  /* , fill 1s cubic-bezier(.65,1.42,.68,.68) forwards 1s */
-  /* box-shadow: 0 0 20px rgba(33,33,33,.2) inset;
-  */
 }
 @keyframes line-anim {
   to {
     stroke-dashoffset: 0;
   }
 }
-/* @keyframes fill {
-  to{
-    fill: transparentize($color: #ce0101, $amount: 1);
-   ;
- }
-}
-*/
-
 .scroll-to-top {
   border: none;
   border-radius: 50%;
