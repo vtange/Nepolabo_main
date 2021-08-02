@@ -131,6 +131,7 @@ h5, .paragraph-msg {
     display: flex;
     justify-content: center;
     position: absolute;
+    width: 100%;
     z-index: 3;
 }
 
