@@ -164,7 +164,8 @@ h5, .paragraph-msg {
 }
 
 #bk-title > p {
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 22px;
 }
 
 #welcome-msg {
@@ -482,7 +483,7 @@ blockquote > p {
         transform: scale(0.9);
     }
     #bk-title{
-        top: 16vw;
+        top: 18vw;
     }
     #welcome-msg {
         font-size: 2.5rem;
