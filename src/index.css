@@ -21,34 +21,19 @@ h5, .paragraph-msg {
 #bg-container {
     width: 100%;
     height: 100%;
-    align-items: center;
-    justify-content: center;
     position: absolute;
 }
 
 #bg {
-    align-items: center;
     background: url(img/chocostripe.png);
     background-repeat: repeat;
     background-size: auto;
-    display: flex;
     height: 100%;
-    justify-content: center;
 }
 
-#content {
+#content,
+#main-page {
     position: relative;
-}
-
-#init-page {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    background-color: aliceblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #ie11-cover {
@@ -85,25 +70,6 @@ h5, .paragraph-msg {
     }
 }
 
-#links-main {
-    position: relative;
-}
-
-#links-main .bookend-bg {
-    position: absolute;
-    width: 100%;
-    z-index: -2;
-}
-
-#links-main .bookend-bg:first-child {
-    top: 0;
-}
-
-#links-main .bookend-bg:last-child {
-    bottom: 0;
-    transform: rotate(180deg);
-}
-
 .column {
     position: relative;
     z-index: 2;
@@ -123,10 +89,6 @@ h5, .paragraph-msg {
     text-align: center;
 }
 
-#main-page {
-    position: relative;
-}
-
 #nplb, #bk-title {
     display: flex;
     flex-direction: row;
@@ -136,22 +98,22 @@ h5, .paragraph-msg {
     z-index: 3;
 }
 
-#nplb > img {
-    width: 20%;
+#nplb img {
+    width: 20%!important;
 }
 
-#nplb > img:nth-child(1) {
+#nplb img:nth-child(1) {
     transform: rotate(10deg);
 }
-#nplb > img:nth-child(2) {
+#nplb img:nth-child(2) {
     transform: translateY(10px) rotate(3deg);
 }
 
-#nplb > img:nth-child(3) {
+#nplb img:nth-child(3) {
     transform: translateY(10px) rotate(-3deg);
 }
 
-#nplb > img:nth-child(4) {
+#nplb img:nth-child(4) {
     transform: rotate(-10deg);
 }
 
