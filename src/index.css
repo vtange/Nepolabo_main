@@ -109,6 +109,11 @@ h5, .paragraph-msg {
     z-index: 2;
 }
 
+.column > svg {
+    /* tiny phones like SE */
+    transform:translateY(-50px);
+}
+
 .full-scrn-center-align {
     display: flex;
     width: 100%;
@@ -120,6 +125,46 @@ h5, .paragraph-msg {
 
 #main-page {
     position: relative;
+}
+
+#nplb, #bk-title {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+}
+
+#nplb > img {
+    width: 20%;
+}
+
+#nplb > img:nth-child(1) {
+    transform: rotate(10deg);
+}
+#nplb > img:nth-child(2) {
+    transform: translateY(10px) rotate(3deg);
+}
+
+#nplb > img:nth-child(3) {
+    transform: translateY(10px) rotate(-3deg);
+}
+
+#nplb > img:nth-child(4) {
+    transform: rotate(-10deg);
+}
+
+#bk-title {
+    align-items: center;
+    flex-direction: column;
+    left: 50%;
+    text-shadow: 0 0 10px black;
+    transform: translateX(-50%);
+    top: 100px;
+    width: 100%;
+}
+
+#bk-title > p {
+    font-weight: bold;
 }
 
 #welcome-msg {
@@ -202,11 +247,13 @@ body:not(.active) #welcome-msg {
 .card > .berry {
     background: lightcoral;
     border: 3px solid indianred;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px darkgrey;
     height:20px;
     width:30px;
     position: absolute;
     left: 70%;
-    top:0;
+    top:-6px;
 }
 
 .card > .berry:first-child {
@@ -408,6 +455,12 @@ blockquote > p {
 }
 
 @media (min-width: 450px) {
+    #bk-title{
+        top: 125px;
+    }
+    .column > svg {
+        transform: translateY(0);
+    }
     #letter-msgs .card-columns {
         column-count: 1;
     }
@@ -424,6 +477,12 @@ blockquote > p {
     #credits {
         display: flex;
         flex-direction: row;
+    }
+    #nplb {
+        transform: scale(0.9);
+    }
+    #bk-title{
+        top: 16vw;
     }
     #welcome-msg {
         font-size: 2.5rem;
@@ -443,6 +502,12 @@ blockquote > p {
 }
 
 @media (min-width: 1000px) {
+    #bk-title{
+        display: none;
+    }
+    #nplb {
+        transform: translateY(-10%) scale(0.8);
+    }
     #welcome-msg {
         font-size: 3rem;
     }
@@ -466,6 +531,9 @@ blockquote > p {
 
 /* lrg */
 @media (min-width: 1200px) {
+    #nplb {
+        transform: translateY(-20%) scale(0.7);
+    }
     .card > .berry {
         width: 50px;
     }
