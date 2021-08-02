@@ -123,7 +123,7 @@ h5, .paragraph-msg {
     left: 50%;
     text-shadow: 0 0 10px black;
     transform: translateX(-50%);
-    top: 100px;
+    top: 80px;
     width: 100%;
 }
 
@@ -145,7 +145,7 @@ body:not(.active) #welcome-msg {
 }
 
 .paragraph-msg {
-    min-width: 300px;
+    min-width: 280px;
 }
 
 #sidetile > p {
