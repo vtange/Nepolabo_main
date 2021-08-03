@@ -1,11 +1,8 @@
 document.getElementById("nojs-cover").style.display = "none";
 
-var content = document.getElementById('content');
-
 setTimeout(function(){
-    content.classList.add('open');
     init();
-}, 1000);
+}, 0);
 
 function init() {
     AOS.init({
@@ -19,4 +16,11 @@ function init() {
     gallery_a.on('error.simplelightbox', function (e) {
         console.log(e); // some usefull information
     });
+}
+
+var artbookLoaded = false;
+
+function reclick(el) {
+    if (artbookLoaded) return;
+    window.setTimeout(function(){artbookLoaded=true;el.click();},0)
 }

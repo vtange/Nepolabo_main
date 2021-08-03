@@ -235,6 +235,7 @@ body:not(.active) #welcome-msg {
 #letter-msgs,
 #artbook {
     padding: 1px;
+    overflow: hidden;
 }
 
 #artbook {
@@ -303,8 +304,8 @@ blockquote > p {
 .stamp-outer {
     height: 90px;
     position: relative;
-    width: 90px;
-    transform: translate(50%, -25%) rotate(10deg) scale(1.1);
+    width: 20px;
+    transform: translate(-100%, -25%) rotate(10deg) scale(1.1);
 }
 
 .flag-icon {
@@ -571,7 +572,9 @@ stroke-width: 15;
 transition: all 100ms ease-in-out;
 }
 
-
+body .sl-overlay {
+    opacity: 0.95;
+}
 
 /* smallest */
 @media (max-width: 450px) {
