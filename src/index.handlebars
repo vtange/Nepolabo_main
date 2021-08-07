@@ -178,7 +178,6 @@
             </div>
             <div class="card-columns">
                 {{#each messages}}
-                {{#if message}}
                 <div class="letter-msg-card-container" data-aos="fade-up">
                     <div class="letter-msg-card card">
                         <div class="berry"></div>
@@ -202,6 +201,7 @@
                                 </div>
                         </div>
                         <div class="letter-msg">
+                        {{#if message}}
                             <blockquote class="blockquote mb-0" {{#if isMsgInJP}}lang="ja" {{/if}}>
                                 <!-- htmlmin:ignore -->
                                 <p>{{message}}</p>
@@ -215,10 +215,16 @@
                                 <!-- htmlmin:ignore -->
                             </blockquote>
                             {{/if}}
+                        {{/if}}
+                            {{#if artwork_url}}
+                            <hr>
+                                <a href="#to-{{artwork_url}}">
+                                    <img class="msg-art" srcset="{{artwork_url}} 150w" sizes="150px" src="{{artwork_url}}" alt="" title="" />
+                                </a>
+                            {{/if}}
                         </div>
                     </div>
                 </div>
-                {{/if}}
                 {{/each}}
             </div>
         </section>
@@ -232,13 +238,68 @@
             </div>
             <div id="artbook-gallery">
                 {{#each artbook_data}}
-                <a href="{{fullpage}}" data-aos="fade-up">
+                <a id="to-{{thumbnail_small}}" href="{{fullpage}}" data-aos="fade-up">
                     <img class="artbook-page" srcset="{{thumbnail_small}} 150w, {{thumbnail}} 500w" sizes="(max-width: 700px) 150px, 500px" src="{{thumbnail}}" alt="" title="" />
                 </a>
                 {{/each}}
             </div>
         </section>
 
+        <footer id="credits">
+            <div class="credits-column">
+                <div class="credits-section">
+                    <h4>Project Organizer</h4>
+                    <p>Corneus/コロネウス</p>
+                    <p>nonJerry</p>
+                </div>
+                <div class="credits-section">
+                    <h4>Translator</h4>
+                    <p>mugichos</p>
+                    <p>Theldeon</p>
+                    <p>kurapan</p>
+                    <p>Jared Hays</p>
+                    <p>vtange</p>
+                </div>
+            </div>
+            <div class="credits-column">
+                <div class="credits-section">
+                    <h4>NePoLaBo art</h4>
+                    <p>Forever9Nine</p>
+                </div>
+                <div class="credits-section">
+                    <h4>Art featured on artbook by</h4>
+                    <p>Forever9Nine</p>
+                    <p>TrollLogic</p>
+                    <p>KRX</p>
+                    <p>Momo Berry</p>
+                    <p>Signal226</p>
+                    <p>Raze雪花</p>
+                    <p>雪月</p>
+                    <p>三世吾郎</p>
+                </div>
+            </div>
+            <div class="credits-column">
+                <div class="credits-section">
+                    <h4>Website</h4>
+                    <p>vtange</p>
+                    <p>Hosu</p>
+                </div>
+                <div class="credits-section">
+                    <h4>Favicon art</h4>
+                    <p>vtange</p>
+                </div>
+                <div class="credits-section">
+                    <h4>Others</h4>
+                    <p><a href="https://www.pixiv.net/artworks/83510355" target="_blank" rel="noopener noreferrer">
+                            ストライプテクスチャ3 by くろま /
+                            Pixiv</a></p>
+                </div>
+                <div class="credits-section">
+                    <h4>Special Thanks</h4>
+                    <p>To everyone who supports this project</p>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" type="application/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.0/simple-lightbox.min.js"

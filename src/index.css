@@ -18,6 +18,10 @@ h5, .paragraph-msg {
     font-size: 1.25rem;
 }
 
+hr {
+    background-color: rosybrown;
+}
+
 #bg-container {
     width: 100%;
     height: 100%;

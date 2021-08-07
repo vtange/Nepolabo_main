@@ -62,8 +62,9 @@ async function build_html() {
             let twitter = twittermatch ? twittermatch[0].trim() : "";
             const nickname = record[2].trim();
             const country = record[3].replace("-"," ");
-            const message = record[5];
-            const message_jp = record[8];
+            const artwork_url = record[5];
+            const message = record[6];
+            const message_jp = record[7];
 
             let country_code = '';
             let country_name = '';
@@ -87,7 +88,7 @@ async function build_html() {
 
             // if there isn't a match, then message is not in Japanese, pass this value to the handlebars file.
             // if there is no JP character and translation is not provided, then the message is in JP
-            var isMsgInJP = !(jpCharacters === null) && record[6] === ""
+            var isMsgInJP = !(jpCharacters === null) && record[7] === ""
 
 
             if (twitter.startsWith("@") || twitter.startsWith("＠")) {
@@ -104,6 +105,7 @@ async function build_html() {
                 country_code: country_code,
                 country_postage: country_postage,
                 message: message,
+                artwork_url: artwork_url,
                 isMsgInJP: isMsgInJP,
                 message_jp: message_jp
             };
