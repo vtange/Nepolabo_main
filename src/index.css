@@ -609,12 +609,6 @@ body .sl-overlay {
     .letter-msg p {
         font-size: 0.95rem;
     }
-
-    .sect-title-deco {
-        height: 6rem;
-        width: 4rem;
-        bottom: -25px;
-    }
 }
 
 @media (min-width: 450px) {
