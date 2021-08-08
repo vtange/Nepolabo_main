@@ -61,3 +61,21 @@ function getPhotoWidth(){
 getPhotoWidth();
 var resizer = debounce(getPhotoWidth, 200);
 window.addEventListener('resize',resizer);
+
+var debutL = 1628694000000;
+var debutN = 1628780400000;
+var debutB = 1628866800000;
+var debutP = 1629039600000;
+var time = new Date();
+if (time > debutL) {
+    document.getElementById("lamy").setAttribute("href","https://determined-poincare-43414e.netlify.app/");
+}
+if (time > debutN) {
+    document.getElementById("nene").setAttribute("href","#");
+}
+if (time > debutB) {
+    document.getElementById("botan").setAttribute("href","#");
+}
+if (time > debutP) {
+    document.getElementById("polka").setAttribute("href","https://nobooli.github.io/POLton/");
+}
