@@ -12,7 +12,7 @@
     <meta property="og:description" content="ねぽらぼ一周年おめでとう！！！！！" />
     <meta property="og:image" content="android-chrome-512x512.png">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://vtange.github.io/messages-page/">
+    <meta property="og:url" content="https://nepolabo.fans/">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ねぽらぼ一周年記念プロジェクト NePoLaBo 1st Anniversary Celebration Project">
@@ -30,13 +30,13 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="preload" href="dist/1920w.jpg" as="image" media="(min-width: 1800px)">
-    <link rel="preload" href="dist/1200w.jpg" as="image" media="(min-width: 1100px) and (max-width: 1799px)">
-    <link rel="preload" href="dist/960w.jpg" as="image" media="(min-width: 800px) and (max-width: 1099px)">
-    <link rel="preload" href="dist/600w.jpg" as="image" media="(min-width: 500px) and (max-width: 799px)">
-    <link rel="preload" href="dist/400w.jpg" as="image">
-    <link rel="preload" href="dist/img/chocostripe.png" as="image">
-    <link rel="preload" href="dist/img/cake.png" as="image">
+    <link rel="preload" href="dist/1920w.jpg" as="image" type="image/jpeg" media="(min-width: 1800px)">
+    <link rel="preload" href="dist/1200w.jpg" as="image" type="image/jpeg" media="(min-width: 1100px) and (max-width: 1799px)">
+    <link rel="preload" href="dist/960w.jpg" as="image" type="image/jpeg" media="(min-width: 800px) and (max-width: 1099px)">
+    <link rel="preload" href="dist/600w.jpg" as="image" type="image/jpeg" media="(min-width: 500px) and (max-width: 799px)">
+    <link rel="preload" href="dist/400w.jpg" as="image" type="image/jpeg">
+    <link rel="preload" href="dist/img/chocostripe.png" as="image" type="image/png">
+    <link rel="preload" href="dist/img/cake.png" as="image" type="image/png">
     <link rel="preload" as="font" type="font/woff2"
     href="https://fonts.gstatic.com/s/notoserifjp/v8/xn7mYHs72GKoTvER4Gn3b5eMXNvMckQlPa61uNKcCqOfbtLXoH3502Rk.119.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2"
@@ -245,6 +245,9 @@
                 <h5>(Click to enlarge)</h5>
                 <h3 lang="ja">画集</h3>
                 <h5>（写真をクリックすると拡大できます）</h5>
+                <a id="msgs-shortcut" href="#letter-msgs" onclick="reclick(this)">
+                    <p>&#10140; To Messages / 手紙へ</p>
+                </a>
             </div>
             <div id="artbook-gallery">
                 {{#each artbook_data}}
