@@ -374,6 +374,27 @@ blockquote > p {
     margin-top: -8px;
 }
 
+#credits[data-lang="jp"] .cred-en,
+#credits[data-lang="en"] .cred-jp {
+    display: none;
+}
+
+#credits button {
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: #eee;
+    font-family: arial;
+    font-weight: 600;
+    height: 40px;
+    width: 60px;
+}
+
+#credits[data-lang="jp"] #credits-jp,
+#credits[data-lang="en"] #credits-en {
+    border-color: #66cdaa;
+    background-color: #fff;
+}
+
 #credits {
     background-color: #47322e;
     border-top: .5rem solid #ffbbd7;

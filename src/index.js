@@ -1,5 +1,24 @@
 document.getElementById("nojs-cover").style.display = "none";
 
+var debutG = 1628434800000;
+var debutL = 1628694000000;
+var debutN = 1628780400000;
+var debutB = 1628866800000;
+var debutP = 1629039600000;
+var time = new Date();
+if (time > debutG) {
+    document.getElementById("lamy").setAttribute("href","https://determined-poincare-43414e.netlify.app/");
+}
+if (time > debutN) {
+    document.getElementById("nene").setAttribute("href","#");
+}
+if (time > debutB) {
+    document.getElementById("botan").setAttribute("href","#");
+}
+if (time > debutP) {
+    document.getElementById("polka").setAttribute("href","https://nobooli.github.io/POLton/");
+}
+
 setTimeout(function(){
     init();
 }, 0);
@@ -62,21 +81,12 @@ getPhotoWidth();
 var resizer = debounce(getPhotoWidth, 200);
 window.addEventListener('resize',resizer);
 
-var debutG = 1628434800000;
-var debutL = 1628694000000;
-var debutN = 1628780400000;
-var debutB = 1628866800000;
-var debutP = 1629039600000;
-var time = new Date();
-if (time > debutG) {
-    document.getElementById("lamy").setAttribute("href","https://determined-poincare-43414e.netlify.app/");
+var enbutton = document.getElementById('credits-en');
+var jpbutton = document.getElementById('credits-jp');
+var credits = document.getElementById('credits');
+document.getElementById('credits-en').onclick = function() {
+    credits.setAttribute("data-lang","en");
 }
-if (time > debutN) {
-    document.getElementById("nene").setAttribute("href","#");
-}
-if (time > debutB) {
-    document.getElementById("botan").setAttribute("href","#");
-}
-if (time > debutP) {
-    document.getElementById("polka").setAttribute("href","https://nobooli.github.io/POLton/");
+document.getElementById('credits-jp').onclick = function() {
+    credits.setAttribute("data-lang","jp");
 }
