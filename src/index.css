@@ -375,20 +375,24 @@ blockquote > p {
 }
 
 #credits {
-    color: rgb(131, 143, 155);
+    background-color: #47322e;
+    border-top: .5rem solid #ffbbd7;
+    color: white;
     column-count: 1;
     font-family: "Noto Serif JP", serif;
     padding: 15px;
-    text-shadow: 0 0 18px #cad0ff;
+    position: absolute;
+    text-shadow: 0 0 1px #ffffff;
+    width: 100%;
 }
 
 #credits h4 {
-    color: cornflowerblue;
+    color: #ffbbd7;
 }
 
 #credits a,
 #credits a:hover {
-    color: rgb(131, 143, 155);
+    color: white;
 }
 
 #credits p {
@@ -639,6 +643,7 @@ body .sl-overlay {
     #credits {
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
     #nplb {
         transform: scale(0.9);
