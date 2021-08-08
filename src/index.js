@@ -26,17 +26,20 @@ function reclick(el) {
 }
 
 var mainPhoto = document.getElementById("photo");
-function getPhotoWidth(width){
+function getPhotoWidth(){
+    var width = window.innerWidth, x;
     if (width > 1800) {
-        return "dist/1920w.jpg";
+        x= "dist/1920w.jpg";
     } else if (width > 1100) {
-        return "dist/1200w.jpg";
+        x= "dist/1200w.jpg";
     } else if (width > 800) {
-        return "dist/960w.jpg";
+        x= "dist/960w.jpg";
     } else if (width > 500) {
-        return "dist/600w.jpg";
+        x= "dist/600w.jpg";
     } else {
-        return "dist/400w.jpg";
+        x= "dist/400w.jpg";
     }
+    mainPhoto.setAttribute("href", x);
 }
-mainPhoto.setAttribute("href", getPhotoWidth(window.innerWidth))
+getPhotoWidth();
+window.addEventListener('resize',getPhotoWidth);
