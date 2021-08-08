@@ -670,6 +670,10 @@ body .sl-overlay {
     #nplb {
         transform: translateY(-10%) scale(0.8);
     }
+    #nplb,
+    #nplb > img {
+        pointer-events:  none;
+    }
     #welcome-msg {
         font-size: 3rem;
     }
