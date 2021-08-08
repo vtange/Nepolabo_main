@@ -25,11 +25,28 @@ function reclick(el) {
     window.setTimeout(function(){artbookLoaded=true;el.click();},0)
 }
 
+function debounce(func, w8, imm) {
+	var timmy;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timmy = null;
+			if (!imm) func.apply(context, args);
+		};
+		var callNow = imm && !timmy;
+		clearTimeout(timmy);
+		timmy = setTimeout(later, w8);
+		if (callNow) func.apply(context, args);
+	};
+};
 var mainPhoto = document.getElementById("photo");
+var largest = false;
 function getPhotoWidth(){
     var width = window.innerWidth, x;
+    if (largest) return;
     if (width > 1800) {
         x= "dist/1920w.jpg";
+        largest = true;
     } else if (width > 1100) {
         x= "dist/1200w.jpg";
     } else if (width > 800) {
@@ -42,4 +59,5 @@ function getPhotoWidth(){
     mainPhoto.setAttribute("href", x);
 }
 getPhotoWidth();
-window.addEventListener('resize',getPhotoWidth);
+var resizer = debounce(getPhotoWidth, 200);
+window.addEventListener('resize',resizer);
