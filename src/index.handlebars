@@ -30,12 +30,19 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Serif+JP&display=swap"
-        rel="stylesheet">
+    <link rel="preload" href="dist/1920w.jpg" as="image" media="(min-width: 1800px)">
+    <link rel="preload" href="dist/1200w.jpg" as="image" media="(min-width: 1100px) and (max-width: 1799px)">
+    <link rel="preload" href="dist/960w.jpg" as="image" media="(min-width: 800px) and (max-width: 1099px)">
+    <link rel="preload" href="dist/600w.jpg" as="image" media="(min-width: 500px) and (max-width: 799px)">
+    <link rel="preload" href="dist/400w.jpg" as="image">
+    <link rel="preload" href="dist/img/chocostripe.png" as="image">
+    <link rel="preload" href="dist/img/cake.png" as="image">
+    <link rel="preload" as="font" type="font/woff2"
+    href="https://fonts.gstatic.com/s/notoserifjp/v8/xn7mYHs72GKoTvER4Gn3b5eMXNvMckQlPa61uNKcCqOfbtLXoH3502Rk.119.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2"
+    href="https://fonts.gstatic.com/s/merriweather/v24/u-440qyriQwlOrhSvowK_l5-fCZM.woff2" crossorigin>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    {{!-- <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css"> --}}
+    <link rel="stylesheet" href="dist/applyfont.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
         integrity="sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw=="
         crossorigin="anonymous" />
@@ -52,8 +59,8 @@
         <div class="curtain"></div>
         <div class="curtain"></div>
         <div class="curtain"></div>
-        <img src="dist/img/nplbbw.svg" alt="" srcset="">
-        <!-- <div class="button" style="pointer-events: auto;">Now</div> -->
+        <img src="dist/img/nplbbw.png" alt="" srcset="dist/img/nplbbw.png 2400w, dist/img/nplbbw1200.png 1200w, dist/img/nplbbw600.png 600w, dist/img/nplbbw300.png 300w"
+        sizes="(max-width: 400px) 300px, (max-width: 700px) 600px, (max-width: 1300px) 1200px, 2000px">
     </div>
 
     <div class="scroll-to-top">
@@ -78,10 +85,11 @@
                     <p class="title has-text-white">Happy 1st Anniversary!</p>
                     <p class="subtitle has-text-white">一周年おめでとうございます!</p>
                     <div class="paragraph-msg has-text-white">
-                        <p lang=ja>甘い思い出のある一年</p>
-                        <p lang=ja>誠にありがとうございます</p>
-                        <p lang=ja>この後の一年が</p>
-                        <p lang=ja>更に良い一年になりますように</p>
+                        <p lang=ja>1周年</p>
+                        <p lang=ja>甘美な思い出</p>
+                        <p lang=ja>ありがとう</p>
+                        <p lang=ja>君の行く道</p>
+                        <p lang=ja>幸ぞ多かれ</p>
                         <div class="full-scrn-center-align">
                             <div id=scroll-arrow-hint><span></span><span></span><span></span></div>
                         </div>
@@ -93,10 +101,10 @@
                 <p class="subtitle has-text-white">一周年おめでとうございます!</p>
             </div>
             <div id="nplb">
-                <img src="dist/img/ne.png" />
-                <img src="dist/img/po.png" />
-                <img src="dist/img/ra.png" />
-                <img src="dist/img/bo.png" />
+                <img src="dist/img/ne.png" srcset="dist/img/ne.png 600w, dist/img/ne200.png 200w" sizes="(max-width: 700px) 200px, 500px"/>
+                <img src="dist/img/po.png" srcset="dist/img/po.png 600w, dist/img/po200.png 200w" sizes="(max-width: 700px) 200px, 500px"/>
+                <img src="dist/img/ra.png" srcset="dist/img/ra.png 600w, dist/img/ra200.png 200w" sizes="(max-width: 700px) 200px, 500px"/>
+                <img src="dist/img/bo.png" srcset="dist/img/bo.png 600w, dist/img/bo200.png 200w" sizes="(max-width: 700px) 200px, 500px"/>
             </div>
             <div class="column">
                 <!-- svg defs -->
@@ -110,7 +118,7 @@
                         0     0     0     1     0 " result="matrixOut" />
                         </filter>
 
-                        <image id="photo" width="960" height="540" href="dist/splash_complete.webp" />
+                        <image id="photo" width="960" height="540" href="dist/1200w.jpg" />
                         <use id="grayscalePhoto" href="#photo" filter="url(#grayscaleFilter)" />
 
                         <path id="polka-path"
