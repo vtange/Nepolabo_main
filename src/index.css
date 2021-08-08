@@ -344,6 +344,10 @@ blockquote > p {
     border: 1px solid firebrick;
     box-shadow: 0 0 3px rgb(100 100 100);
 }
+.msg-art {
+    display: flex;
+    justify-content: center;
+}
 
 #artbook-gallery {
     margin-left: 5%;
