@@ -204,11 +204,6 @@ async function build_html() {
             thumbnail_small: "artbook/thumbs_small/Misato_Wakatsuki_.jpg",
         },
         {
-            fullpage: "artbook/研ぎ汁ウェイ___雪風ときみ.png",
-            thumbnail: "artbook/thumbs/研ぎ汁ウェイ___雪風ときみ.png",
-            thumbnail_small: "artbook/thumbs_small/研ぎ汁ウェイ___雪風ときみ_.png",
-        },
-        {
             fullpage: "artbook/ひらいいち.jpeg",
             thumbnail: "artbook/thumbs/ひらいいち.jpg",
             thumbnail_small: "artbook/thumbs_small/ひらいいち_.jpg",
