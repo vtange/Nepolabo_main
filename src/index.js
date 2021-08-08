@@ -12,27 +12,9 @@ function init() {
         once: false,
     });
 
-    var gallery_a = new SimpleLightbox('#artbook-gallery a');
-    var eject = function(){
-        document.querySelector(".sl-wrapper").style.display = "none";
-        document.querySelector(".sl-overlay").style.display = "none";
-        gallery_a.close();
-    }
-    var reset = function(){
-        document.querySelector(".sl-wrapper").removeEventListener("click", eject);
-    }
-    gallery_a.on('show.simplelightbox', function () {
-        window.setTimeout(function(){
-            document.querySelector(".sl-wrapper").style.display = "block";
-            document.querySelector(".sl-overlay").style.display = "block";
-            document.querySelector(".sl-wrapper").addEventListener("click", eject);
-        },200);
-    });
-    gallery_a.on('close.simplelightbox', function () {
-        reset();
-    });
+    let gallery_a = new SimpleLightbox('#artbook-gallery a');
     gallery_a.on('error.simplelightbox', function (e) {
-        console.log(e);
+        console.log(e); // some usefull information
     });
 }
 
