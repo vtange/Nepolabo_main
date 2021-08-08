@@ -62,7 +62,7 @@ getPhotoWidth();
 var resizer = debounce(getPhotoWidth, 200);
 window.addEventListener('resize',resizer);
 
-var debutG = 1628521200000;
+var debutG = 1628434800000;
 var debutL = 1628694000000;
 var debutN = 1628780400000;
 var debutB = 1628866800000;
