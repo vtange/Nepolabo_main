@@ -2,22 +2,22 @@
 from = "/nene"
 to = "/"
 status = 302
-force = false
+force = true
 
 [[redirects]]
 from = "/polka"
 to = "/"
 status = 302
-force = false
+force = true
 
 [[redirects]]
 from = "/lamy"
 to = "/"
 status = 302
-force = false
+force = true
 
 [[redirects]]
 from = "/botan"
 to = "/"
 status = 302
-force = false
+force = true
