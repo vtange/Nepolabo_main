@@ -255,8 +255,8 @@ async function build_html() {
         },
         {
             fullpage: "artbook/赤日REDアカヒ.png",
-            thumbnail: "artbook/thumbs/赤日REDアカヒ.png",
-            thumbnail_small: "artbook/thumbs_small/赤日REDアカヒ_.png",
+            thumbnail: "artbook/thumbs/赤日REDアカヒ.jpg",
+            thumbnail_small: "artbook/thumbs_small/赤日REDアカヒ_.jpg",
         }
     ]
 

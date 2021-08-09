@@ -374,6 +374,11 @@ blockquote > p {
     margin-top: -8px;
 }
 
+.lang-btns {
+    display: flex;
+    flex-direction: column;
+}
+
 #credits[data-lang="jp"] .cred-en,
 #credits[data-lang="en"] .cred-jp {
     display: none;
@@ -658,7 +663,6 @@ body .sl-overlay {
     #credits {
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
     #nplb {
         transform: scale(0.9);
@@ -707,7 +711,7 @@ body .sl-overlay {
     }
 
     #credits .credits-column:first-of-type {
-        margin-left: 5%;
+        margin-left: 15%;
     }
 
     #credits .credits-column:last-of-type {
