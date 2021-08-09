@@ -232,6 +232,31 @@ async function build_html() {
             fullpage: "artbook/jjtri_tee.png",
             thumbnail: "artbook/thumbs/jjtri_tee.jpg",
             thumbnail_small: "artbook/thumbs_small/jjtri_tee_.jpg",
+        },
+        {
+            fullpage: "artbook/Dixit.png",
+            thumbnail: "artbook/thumbs/Dixit.png",
+            thumbnail_small: "artbook/thumbs_small/Dixit_.png",
+        },
+        {
+            fullpage: "artbook/HonsuAman.png",
+            thumbnail: "artbook/thumbs/HonsuAman.png",
+            thumbnail_small: "artbook/thumbs_small/HonsuAman_.png",
+        },
+        {
+            fullpage: "artbook/じえしにくちゃんん.png",
+            thumbnail: "artbook/thumbs/じえしにくちゃんん.png",
+            thumbnail_small: "artbook/thumbs_small/じえしにくちゃんん_.png",
+        },
+        {
+            fullpage: "artbook/角巻Hippo.png",
+            thumbnail: "artbook/thumbs/角巻Hippo.png",
+            thumbnail_small: "artbook/thumbs_small/角巻Hippo_.png",
+        },
+        {
+            fullpage: "artbook/赤日REDアカヒ.png",
+            thumbnail: "artbook/thumbs/赤日REDアカヒ.png",
+            thumbnail_small: "artbook/thumbs_small/赤日REDアカヒ_.png",
         }
     ]
 
