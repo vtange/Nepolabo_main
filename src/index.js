@@ -6,7 +6,7 @@ var debutB = 1628866800000;
 var debutP = 1629039600000;
 var time = new Date();
 if (time > debutL) {
-    document.getElementById("lamy").setAttribute("href","https://determined-poincare-43414e.netlify.app/");
+    document.getElementById("lamy").setAttribute("href","/lamy");
 }
 if (time > debutN) {
     document.getElementById("nene").setAttribute("href","/nene");
