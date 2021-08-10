@@ -576,6 +576,39 @@ to {
     stroke-dashoffset: 0;
 }
 }
+.hint-point {
+    stroke: white;
+    fill: transparent;
+    stroke-width: 20px;
+    animation: slowShow2 5s infinite;
+    transition: opacity 0.3s ease;
+}
+a:hover ~ .hint-point {
+    opacity: 0!important;
+}
+@keyframes slowShow2 {
+    0% {
+        opacity: 0;
+        stroke-width: 20px;
+    }
+    30% {
+        opacity: 0;
+        stroke-width: 20px;
+    }
+    60% {
+        opacity: 1;
+        stroke-width: 20px;
+    }
+    70% {
+        opacity: 1;
+        stroke-width: 20px;
+    }
+    100% {
+        opacity: 0;
+        stroke-width: 40px;
+    }
+}
+
 .scroll-to-top {
 border: none;
 border-radius: 50%;
