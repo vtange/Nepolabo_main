@@ -9,7 +9,7 @@ function secondsToHms(d) {
     var m = Math.floor(d % 3600 / 60);
     var s = Math.floor(d % 3600 % 60);
     return (
-      (h > 0 ? h + ":" + (m < 10 ? "0" : "") : "") + m + ":" + (s < 10 ? "0" : "") + s
+      (h > 0 ? (h>9?h:"0"+h) + ":" + (m < 10 ? "0" : "") : "00:") + m + ":" + (s < 10 ? "0" : "") + s
     );
 }
 function get(a){
