@@ -1,47 +1,47 @@
 [[redirects]]
 from = "/nene"
-to = "/"
+to = "/countdown"
 status = 302
 force = true
 
 [[redirects]]
 from = "/nene/*"
-to = "/"
+to = "/countdown"
 status = 302
 force = true
 
 [[redirects]]
 from = "/polka"
-to = "/"
+to = "/countdown"
 status = 302
 force = true
 
 [[redirects]]
 from = "/polka/*"
-to = "/"
+to = "/countdown"
 status = 302
 force = true
 
 [[redirects]]
 from = "/lamy"
-to = "/"
+to = "/countdown"
 status = 302
 force = true
 
 [[redirects]]
 from = "/lamy/*"
-to = "/"
+to = "/countdown"
 status = 302
 force = true
 
 [[redirects]]
 from = "/botan"
-to = "/"
+to = "/countdown"
 status = 302
 force = true
 
 [[redirects]]
 from = "/botan/*"
-to = "/"
+to = "/countdown"
 status = 302
 force = true

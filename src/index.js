@@ -1,22 +1,21 @@
 document.getElementById("nojs-cover").style.display = "none";
 
-var debutG = 1628434800000;
 var debutL = 1628694000000;
 var debutN = 1628780400000;
 var debutB = 1628866800000;
 var debutP = 1629039600000;
 var time = new Date();
-if (time > debutG) {
+if (time > debutL) {
     document.getElementById("lamy").setAttribute("href","https://determined-poincare-43414e.netlify.app/");
 }
 if (time > debutN) {
-    document.getElementById("nene").setAttribute("href","#");
+    document.getElementById("nene").setAttribute("href","/nene");
 }
 if (time > debutB) {
-    document.getElementById("botan").setAttribute("href","#");
+    document.getElementById("botan").setAttribute("href","/botan");
 }
 if (time > debutP) {
-    document.getElementById("polka").setAttribute("href","https://nobooli.github.io/POLton/");
+    document.getElementById("polka").setAttribute("href","/polka");
 }
 
 setTimeout(function(){
