@@ -26,6 +26,7 @@ var po = get("po");
 var ra = get("ra");
 var bo = get("bo");
 var nplb = [ne,po,ra,bo];
+runTimer();
 window.setInterval(function(){
     runTimer();
 },1000);
