@@ -388,6 +388,7 @@ blockquote > p {
     border: 2px solid gray;
     border-radius: 10px;
     background-color: #eee;
+    color: gray;
     font-family: arial;
     font-weight: 600;
     height: 40px;
@@ -396,8 +397,9 @@ blockquote > p {
 
 #credits[data-lang="jp"] #credits-jp,
 #credits[data-lang="en"] #credits-en {
-    border-color: #66cdaa;
+    border-color: #e03499;
     background-color: #fff;
+    color: #e03499;
 }
 
 #credits {
