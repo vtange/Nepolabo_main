@@ -204,7 +204,7 @@ async function build_html() {
             thumbnail_small: "artbook/thumbs_small/Misato_Wakatsuki_.jpg",
         },
         {
-            fullpage: "artbook/ひらいいち.jpeg",
+            fullpage: "artbook/ひらいいち.png",
             thumbnail: "artbook/thumbs/ひらいいち.jpg",
             thumbnail_small: "artbook/thumbs_small/ひらいいち_.jpg",
         },
