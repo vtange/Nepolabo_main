@@ -23,6 +23,18 @@ status = 302
 force = true
 
 [[redirects]]
+from = "/lamy"
+to = "/countdown"
+status = 302
+force = true
+
+[[redirects]]
+from = "/lamy/*"
+to = "/countdown"
+status = 302
+force = true
+
+[[redirects]]
 from = "/botan"
 to = "/countdown"
 status = 302
