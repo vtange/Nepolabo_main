@@ -588,6 +588,23 @@ to {
 a:hover ~ .hint-point {
     opacity: 0!important;
 }
+.link-btns {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+a:hover ~ .link-btns {
+    opacity: 0!important;
+}
+.link-btns text {
+    fill: white;
+    font-family: arial;
+    font-size: 28px;
+}
+.link-btn {
+    fill: rgba(48,37,37,.8);
+    stroke: white;
+    stroke-width: 3px;
+}
 @keyframes slowShow2 {
     0% {
         opacity: 0;
