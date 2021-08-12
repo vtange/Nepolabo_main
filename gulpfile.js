@@ -259,6 +259,11 @@ async function build_html() {
             thumbnail_small: "artbook/thumbs_small/赤日REDアカヒ_.jpg",
         },
         {
+            fullpage: "artbook/591-_TURTLE.png",
+            thumbnail: "artbook/thumbs/591-_TURTLE.png",
+            thumbnail_small: "artbook/thumbs_small/591-_TURTLE_.png",
+        },
+        {
             fullpage: "artbook/HOLO-29-NewVer.png",
             thumbnail: "artbook/thumbs/HOLO-29-NewVer.png",
             thumbnail_small: "artbook/thumbs_small/HOLO-29-NewVer_.png",
