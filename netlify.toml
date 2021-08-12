@@ -1,4 +1,16 @@
 [[redirects]]
+from = "/nene"
+to = "/countdown"
+status = 302
+force = true
+
+[[redirects]]
+from = "/nene/*"
+to = "/countdown"
+status = 302
+force = true
+
+[[redirects]]
 from = "/polka"
 to = "/countdown"
 status = 302
