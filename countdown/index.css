@@ -7,6 +7,11 @@ body {
     overflow: hidden;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 table {
     background-color: rgba(0,0,0,0.39);
     color: white;
