@@ -19,7 +19,42 @@ function get(a){
 function runTimer(){
     var time = new Date().getTime();
     nplb.forEach(function(el,i){
-        el.innerHTML = secondsToHms((debuts[i] - time)/1000);
+        var timeleft = (debuts[i] - time)/1000;
+        if (el.getAttribute("done") === "true") return;
+        el.innerHTML = secondsToHms(timeleft);
+        if(timeleft < 0) {
+            el.setAttribute("done","true");
+            switch (el.id) {
+                case "ne":
+                    el.parentElement.style.background = "rgba(254, 161, 0, 0.5)";
+                    el.parentElement.style.cursor = "pointer";
+                    el.parentElement.addEventListener("click",function(){
+                        window.location.href = '../nene';
+                    });
+                    break;
+                case "po":
+                    el.parentElement.style.background = "rgba(254, 57, 0, 0.4)";
+                    el.parentElement.style.cursor = "pointer";
+                    el.parentElement.addEventListener("click",function(){
+                        window.location.href = '../polka';
+                    });
+                    break;
+                case "ra":
+                    el.parentElement.style.background = "rgba(106,255,255,0.3)";
+                    el.parentElement.style.cursor = "pointer";
+                    el.parentElement.addEventListener("click",function(){
+                        window.location.href = '../lamy';
+                    });
+                    break;
+                case "bo":
+                    el.parentElement.style.background = "rgba(106,255,155,0.3)";
+                    el.parentElement.style.cursor = "pointer";
+                    el.parentElement.addEventListener("click",function(){
+                        window.location.href = '../botan';
+                    });
+                    break;
+            }
+        }
     });
 }
 var ne = get("ne");
