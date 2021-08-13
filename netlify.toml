@@ -11,13 +11,6 @@ status = 302
 force = true
 
 [[redirects]]
-from = "/botan"
-to = "/countdown"
-status = 302
-force = true
-
-[[redirects]]
 from = "/botan/*"
-to = "/countdown"
-status = 302
-force = true
+to = "/botan/index.html"
+status = 200
