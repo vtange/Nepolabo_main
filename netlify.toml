@@ -1,4 +1,10 @@
 [[redirects]]
+from = "/book"
+to = "/countdown"
+status = 302
+force = true
+
+[[redirects]]
 from = "/polka"
 to = "/countdown"
 status = 302
