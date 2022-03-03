@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/en/picnic", {data:[{}],fetch:{},mutations:void 0});

@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/hub", {data:[{}],fetch:{},mutations:void 0});
