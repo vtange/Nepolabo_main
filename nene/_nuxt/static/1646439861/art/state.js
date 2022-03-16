@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fnene\u002F_nuxt\u002Fstatic\u002F1646439861",layout:"nekkodexLayout",error:a,serverRendered:true,routePath:"\u002Fart",config:{_app:{basePath:"\u002Fnene\u002F",assetsPath:"\u002Fnene\u002F_nuxt\u002F",cdnURL:a}}}}(null));
