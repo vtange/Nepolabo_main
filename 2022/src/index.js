@@ -186,6 +186,15 @@ runTimer();
 window.setInterval(function(){
     runTimer();
 },1000);
+// prevent click on mobile (which passes disabled button)
+nplb.forEach(function(el,i){
+    el.parentElement.addEventListener("click", function(e){
+        if(el.disabled) {
+           e.preventDefault();
+           return false;
+        }
+    });
+});
 
 function toggleLanguage(){
     var current = document.body.getAttribute("data-swaplang");
