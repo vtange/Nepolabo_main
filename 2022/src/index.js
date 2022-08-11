@@ -68,12 +68,19 @@ var colors = ["red","orange","yellow","green","aqua","blue","purp"];
 function generateFirework(e){
     var colidx = Math.floor(Math.random()*colors.length);
     var newFireworkCont = document.createElement("div");
+    var newFireworkRotator = document.createElement("div");
+    newFireworkRotator.style.transform = "rotateZ("+Math.round(Math.random()*350)+"deg)"
     newFireworkCont.className = "firework-"+colors[colidx];
     newFireworkCont.style.position = "absolute";
     newFireworkCont.style.top = e.y+"px";
     newFireworkCont.style.left = e.x+"px";
+    var isHeart = Math.round(Math.random());
     var newFirework = document.createElement("div");
-    newFirework.className = Math.round(Math.random()) ? "firework" : "fireworkwithcolorchange";
+    if(isHeart) {
+        newFirework.className = Math.round(Math.random()) ? "heartfirework" : "heartfireworkwithcolorchange";
+    } else {
+        newFirework.className = Math.round(Math.random()) ? "firework" : "fireworkwithcolorchange";
+    }
     var newUchiage = document.createElement("div");
     newUchiage.className = "uchiage";
     var newSparkle = document.createElement("div");
@@ -85,7 +92,8 @@ function generateFirework(e){
     newUchiage.appendChild(newSparkle);
     newUchiage.appendChild(newSparkle1);
     newUchiage.appendChild(newSparkle2);
-    newFireworkCont.appendChild(newFirework);
+    newFireworkRotator.appendChild(newFirework);
+    newFireworkCont.appendChild(newFireworkRotator);
     newFireworkCont.appendChild(newUchiage);
     sky.appendChild(newFireworkCont);
     tot += colidx;

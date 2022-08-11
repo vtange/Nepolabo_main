@@ -151,18 +151,6 @@ body.showMessages .FULLSCRN {
     filter: hue-rotate(0deg);
 }
 
-.firework {
-    animation: firework 2s normal forwards linear;
-    animation-delay: 1s;
-    background: url(p.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height:200px;
-    opacity: 0;
-    transform: scale(0.0);
-    width:200px;
-}
-
 .uchiage {
     animation: uchiage 1s ease-out;
     align-items: center;
@@ -249,6 +237,18 @@ body.showMessages .FULLSCRN {
     }
   }
 
+  .firework {
+    animation: firework 2s normal forwards linear;
+    animation-delay: 1s;
+    background: url(p.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:200px;
+    opacity: 0;
+    transform: scale(0.0);
+    width:200px;
+}
+
   .fireworkwithcolorchange {
     animation: fireworkwithcolorchange 2s normal forwards linear;
     animation-delay: 1s;
@@ -293,6 +293,96 @@ body.showMessages .FULLSCRN {
       }
     }
 
+    .heartfirework {
+        animation: heartfirework 2s normal forwards linear;
+        animation-delay: 1s;
+        background: url(h.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height:150px;
+        opacity: 0;
+        transform: scale(0.0);
+        width:150px;
+    }
+
+    .heartfireworkwithcolorchange {
+        animation: heartfireworkwithcolorchange 2s normal forwards linear;
+        animation-delay: 1s;
+        background: url(h.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height:150px;
+        opacity: 0;
+        transform: scale(0.0);
+        width:150px;
+    }
+
+    .firework-rotator{
+        transform: rotateZ(45deg);
+    }
+
+     @keyframes heartfirework {
+        0% {
+        filter: brightness(0.5);
+        transform: scale(0.0);
+        opacity: 0;
+        }
+        25% {
+        opacity: 1;
+        }
+        40% {
+        filter: brightness(1.5);
+        transform: scale(1.8);
+        }
+        70% {
+        background: url(hglow.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+        90% {
+        filter: brightness(1.5);
+        opacity: 1;
+        }
+        100% {
+        background: url(hglow.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: brightness(1);
+        transform: scale(3);
+        opacity: 0;
+        }
+      }
+      @keyframes heartfireworkwithcolorchange {
+          0% {
+            filter: brightness(0.5) hue-rotate(0deg);
+            transform: scale(0.0);
+            opacity: 0;
+          }
+          25% {
+            opacity: 1;
+          }
+          40% {
+            filter: brightness(1.5) hue-rotate(0deg);
+            transform: scale(1.8);
+          }
+          70% {
+            background: url(hglow.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+          90% {
+            filter: brightness(1.5) hue-rotate(90deg);
+            opacity: 1;
+          }
+          100% {
+            background: url(hglow.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            filter: brightness(1) hue-rotate(90deg);
+            transform: scale(3);
+            opacity: 0;
+          }
+        }
 /*--------------BUTTONS---------------*/
 .button-container {
     align-items: center;
