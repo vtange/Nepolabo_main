@@ -1,7 +1,7 @@
 document.getElementById("nojs-cover").style.display = "none";
 
 function init() {
-    let gallery_a = new SimpleLightbox('#artbook-gallery a');
+    let gallery_a = new SimpleLightbox('.msg-art a', {disableScroll: false});
     gallery_a.on('error.simplelightbox', function (e) {
         console.log(e); // some usefull information
     });
@@ -50,6 +50,7 @@ if (data) {
 }
 
 function toggleMessagesPopup(bool) {
+    init();
     document.body.classList.toggle("showMessages",bool);
 }
 
