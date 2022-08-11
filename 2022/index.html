@@ -31,12 +31,11 @@
         integrity="sha512-FHwwMXxhAWjVhJyEgmmPg/aJ3BRmsOavHBV6yMK55Mz0rycBZcRmSowqij+ncd/JPtOzmUMZx7ZIRnGyqIE/1A=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="src/index.css">
-
-<body>
+<body data-swaplang="JP">
     <div id="ie11-cover"><p>Please use a different web browser to see this site.</p><p>このサイトを見るために他のウェブブラウザーを使ってください。</p></div>
     <div id="nojs-cover"><p>Please turn on Javascript to fully access this site's features.</p><p>このサイトの全ての機能を利用するためにはJavaScriptを有効にする必要があります。</p></div>
     <div id="content">
-        <div id="tutorial">Click to launch fireworks. クリックすると花火を打ち上げます。</div>
+        <div id="tutorial"><span data-swaplang="EN">Click to launch fireworks</span><span data-swaplang="JP">クリックすると花火を打ち上げます</span></div>
         <div class="button-container">'
             <a href="../"><img class="btn-icon" src="src/back.png"/></a>
             <button class="icon-btn" onclick="toggleMessagesPopup(true)"><img class="btn-icon" src="src/letter.png"/></button>
@@ -49,6 +48,7 @@
                 <div id="ra">08:12:21</div></a>
             <a href="./botan/index.html"><button disabled class="icon-btn" onclick=""><img class="btn-icon" src="src/ssrb.png"/></button>
                 <div id="bo">08:14:21</div></a>
+            <button id="lang-btn" class="text-btn" onclick="toggleLanguage()">JP</button>
         </div>
 
         <div class="FULLSCRN" id="sky">

@@ -187,3 +187,10 @@ runTimer();
 window.setInterval(function(){
     runTimer();
 },1000);
+
+function toggleLanguage(){
+    var current = document.body.getAttribute("data-swaplang");
+    var next = current === "JP" ? "EN" : "JP";
+    document.body.setAttribute("data-swaplang",next);
+    document.getElementById("lang-btn").innerHTML = next;
+}
