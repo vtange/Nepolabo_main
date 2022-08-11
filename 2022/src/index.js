@@ -189,8 +189,9 @@ window.setInterval(function(){
 // prevent click on mobile (which passes disabled button)
 nplb.forEach(function(el,i){
     el.parentElement.addEventListener("click", function(e){
-        if(el.disabled) {
+        if(el.previousElementSibling.disabled) {
            e.preventDefault();
+           e.stopPropagation();
            return false;
         }
     });
