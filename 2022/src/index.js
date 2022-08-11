@@ -1,6 +1,8 @@
 document.getElementById("nojs-cover").style.display = "none";
 
+var initted = false;
 function init() {
+    initted = true;
     let gallery_a = new SimpleLightbox('.msg-art a', {disableScroll: false});
     gallery_a.on('error.simplelightbox', function (e) {
         console.log(e); // some usefull information
@@ -51,7 +53,9 @@ if (data) {
 }
 
 function toggleMessagesPopup(bool) {
-    init();
+    if(!initted) {
+        init();
+    }
     document.body.classList.toggle("showMessages",bool);
 }
 
