@@ -196,9 +196,18 @@ nplb.forEach(function(el,i){
     });
 });
 
+var strKey = "opt_lang";
+idbKeyval.get(strKey).then(function(returnVal){
+    if(returnVal ==="EN" || returnVal === "JP") {
+        document.body.setAttribute("data-swaplang",returnVal);
+        document.getElementById("lang-btn").innerHTML = returnVal;
+    }
+});
+
 function toggleLanguage(){
     var current = document.body.getAttribute("data-swaplang");
     var next = current === "JP" ? "EN" : "JP";
     document.body.setAttribute("data-swaplang",next);
     document.getElementById("lang-btn").innerHTML = next;
+    idbKeyval.set(strKey,next);
 }
