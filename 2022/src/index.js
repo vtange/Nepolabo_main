@@ -13,24 +13,23 @@ var sky = document.getElementById('sky');
 var picnic = document.getElementById('picnic');
 var tint = document.getElementById('picnictint');
 
-function getColor(){
-    var val = Math.random() * 5;
-    if (val < 1) {
-        return "rgb("+247+","+255+","+217+")";
-    } else if (val < 2) {
+function getColor(oshi){
+    if (oshi === "Momosuzu Nene") {
+        return "rgb("+255+","+208+","+177+")";
+    } else if (oshi === "Shishiro Botan") {
         return "rgb("+215+","+255+","+225+")";
-    } else if (val < 3) {
+    } else if (oshi === "Yukihana Lamy") {
         return "rgb("+216+","+240+","+255+")";
-    } else if (val < 4) {
-        return "rgb("+227+","+215+","+255+")";
+    } else if (oshi === "Omaru Polka") {
+        return "rgb("+255+","+183+","+199+")";
     }
-    return "rgb("+255+","+219+","+215+")";
+    return "rgb("+227+","+215+","+255+")";
 }
 
 var Hello = {
     view: function () {
         return m("section.postcards", data.messages.map(o =>
-            m(".postcard",{style: {"background-color": getColor()}},
+            m(".postcard[oshi="+o.oshi+"]",{style: {"background-color": getColor(o.oshi)}},
                 [m(".postcard-header",
                         m(".user-info",
                             [(o.prof?m("img.profile-pic[src="+o.prof+"]"):""),

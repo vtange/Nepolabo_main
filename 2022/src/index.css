@@ -3,11 +3,6 @@ body {
     margin: 0;
 }
 
-*:lang(ja) {
-    font-family: 'Noto Serif JP', serif;
-}
-
-
 #ie11-cover {
     background-color: aliceblue;
     transform: scale(0);
@@ -437,14 +432,11 @@ body:not(.showMessages) #messages-popup {
 }
 
 .popup {
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.8);
     border: 1px solid gold;
     border-radius: 20px;
     box-sizing: border-box;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
-    margin-bottom: 5%;
+    padding: 5%;
     position: absolute;
     user-select: none;
     width:100%;
@@ -482,12 +474,12 @@ body:not(.showMessages) #messages-popup {
 }
 
 .messages p {
-    font-family: 'Noto Serif JP', serif;
+    font-family: 'Noto Serif JP';
     font-size: 1rem;
 }
 
 .messages > div + div[lang="ja"] {
-    border-top: 2px solid #ddd;
+    border-top: 2px solid rgba(0,0,0,0.3);
 }
 
 .postcard-header, .picturecard-header {
@@ -530,7 +522,7 @@ body:not(.showMessages) #messages-popup {
 }
 
 .user-twitter {
-    color: #6c757d;
+    color: #194368;
     font-size: 0.9rem;
     font-style: italic;
     white-space: nowrap;
@@ -752,7 +744,7 @@ section.postcards:nth-child(even) .stamp-inner[data-code="jp"] .stamp-deco {
         column-count: 2;
     }
     .messages p {
-        font-family: 'Noto Serif JP', serif;
+        font-family: 'Noto Serif JP';
         font-size: 1.15rem;
     }
     .user-name {
@@ -768,7 +760,7 @@ section.postcards:nth-child(even) .stamp-inner[data-code="jp"] .stamp-deco {
          column-count: 3;
      }
      .messages p {
-         font-family: 'Noto Serif JP', serif;
+         font-family: 'Noto Serif JP';
          font-size: 1.25rem;
      }
      .user-name {
