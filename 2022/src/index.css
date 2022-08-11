@@ -735,6 +735,10 @@ section.postcards:nth-child(even) .stamp-inner[data-code="jp"] .stamp-deco {
     overflow: hidden;
 }
 
+#ne, #po, #ra, #bo {
+    pointer-events: none;
+}
+
 @media (min-width: 450px) {
     section.postcards {
         column-count: 1;
@@ -790,6 +794,8 @@ section.postcards:nth-child(even) .stamp-inner[data-code="jp"] .stamp-deco {
  @media (max-width: 400px) {
     .button-container {
         transform: scale(0.8);
+        left: 0;
+        top:0;
     }
  }
 
