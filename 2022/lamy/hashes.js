@@ -1,0 +1,1 @@
+var hashes = {"main":{"css":"main.111f13c925e8058297ae.css","js":"main.654ff1a515568e36740a.js"},"vendors~main":{"js":"vendors~main.9d1b7eea6ec113c501ce.js"},"":{"html":"index.html"}};
