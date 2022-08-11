@@ -1,9 +1,9 @@
 [[redirects]]
-from = "/polka/*"
-to = "/polka/index.html"
+from = "/2021/polka/*"
+to = "/2021/polka/index.html"
 status = 200
 
 [[redirects]]
-from = "/botan/*"
-to = "/botan/index.html"
+from = "/2021/botan/*"
+to = "/2021/botan/index.html"
 status = 200
