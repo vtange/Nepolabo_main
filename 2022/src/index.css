@@ -735,6 +735,7 @@ section.postcards:nth-child(even) .stamp-inner[data-code="jp"] .stamp-deco {
     overflow: hidden;
 }
 
+.disabled,
 #ne, #po, #ra, #bo {
     pointer-events: none;
 }
