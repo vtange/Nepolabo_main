@@ -69,14 +69,22 @@ function generateFirework(e){
     var colidx = Math.floor(Math.random()*colors.length);
     var newFireworkCont = document.createElement("div");
     var newFireworkRotator = document.createElement("div");
-    newFireworkRotator.style.transform = "rotateZ("+Math.round(Math.random()*350)+"deg)"
+    newFireworkRotator.style.transform = "rotateZ("+(Math.round(Math.random()*60)-30)+"deg)"
     newFireworkCont.className = "firework-"+colors[colidx];
     newFireworkCont.style.position = "absolute";
     newFireworkCont.style.top = e.y+"px";
     newFireworkCont.style.left = e.x+"px";
-    var isHeart = Math.round(Math.random());
+    var val = Math.floor(Math.random()*8);
     var newFirework = document.createElement("div");
-    if(isHeart) {
+    if(val < 1) {
+        newFirework.className = "nefirework";
+    } else if(val < 2) {
+        newFirework.className = "pofirework";
+    } else if(val < 3) {
+        newFirework.className = "rafirework";
+    } else if(val < 4) {
+        newFirework.className = "bofirework";
+    } else if(val < 5) {
         newFirework.className = Math.round(Math.random()) ? "heartfirework" : "heartfireworkwithcolorchange";
     } else {
         newFirework.className = Math.round(Math.random()) ? "firework" : "fireworkwithcolorchange";

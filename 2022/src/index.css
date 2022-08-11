@@ -383,6 +383,144 @@ body.showMessages .FULLSCRN {
             opacity: 0;
           }
         }
+
+    .nefirework {
+        animation: nefirework 2s normal forwards linear;
+        animation-delay: 1s;
+        background: url(ne.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height:150px;
+        opacity: 0;
+        transform: scale(0.0);
+        width:150px;
+    }
+    @keyframes nefirework {
+        0% {
+        filter: brightness(0.5);
+        transform: scale(0.0);
+        opacity: 0;
+        }
+        25% {
+        opacity: 1;
+        }
+        40% {
+        filter: brightness(1.5);
+        transform: scale(1.8);
+        }
+        90% {
+        filter: brightness(1.5);
+        opacity: 1;
+        }
+        100% {
+        filter: brightness(1);
+        transform: scale(3);
+        opacity: 0;
+        }
+      }
+
+    .pofirework {
+        animation: nefirework 2s normal forwards linear;
+        animation-delay: 1s;
+        background: url(po.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height:150px;
+        opacity: 0;
+        transform: scale(0.0);
+        width:150px;
+    }
+    @keyframes pofirework {
+        0% {
+        filter: brightness(0.5);
+        transform: scale(0.0);
+        opacity: 0;
+        }
+        25% {
+        opacity: 1;
+        }
+        40% {
+        filter: brightness(1.5);
+        transform: scale(1.8);
+        }
+        90% {
+        filter: brightness(1.5);
+        opacity: 1;
+        }
+        100% {
+        filter: brightness(1);
+        transform: scale(3);
+        opacity: 0;
+        }
+      }
+      .rafirework {
+        animation: nefirework 2s normal forwards linear;
+        animation-delay: 1s;
+        background: url(ra.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height:150px;
+        opacity: 0;
+        transform: scale(0.0);
+        width:150px;
+    }
+    @keyframes rafirework {
+        0% {
+        filter: brightness(0.5);
+        transform: scale(0.0);
+        opacity: 0;
+        }
+        25% {
+        opacity: 1;
+        }
+        40% {
+        filter: brightness(1.5);
+        transform: scale(1.8);
+        }
+        90% {
+        filter: brightness(1.5);
+        opacity: 1;
+        }
+        100% {
+        filter: brightness(1);
+        transform: scale(3);
+        opacity: 0;
+        }
+      }
+      .bofirework {
+        animation: nefirework 2s normal forwards linear;
+        animation-delay: 1s;
+        background: url(bo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height:150px;
+        opacity: 0;
+        transform: scale(0.0);
+        width:150px;
+    }
+    @keyframes bofirework {
+        0% {
+        filter: brightness(0.5);
+        transform: scale(0.0);
+        opacity: 0;
+        }
+        25% {
+        opacity: 1;
+        }
+        40% {
+        filter: brightness(1.5);
+        transform: scale(1.8);
+        }
+        90% {
+        filter: brightness(1.5);
+        opacity: 1;
+        }
+        100% {
+        filter: brightness(1);
+        transform: scale(3);
+        opacity: 0;
+        }
+      }
 /*--------------BUTTONS---------------*/
 .button-container {
     align-items: center;
@@ -617,180 +755,6 @@ body:not(.showMessages) #messages-popup {
     font-style: italic;
     white-space: nowrap;
     text-overflow: ellipsis;
-}
-
-.stamp-outer {
-    background-image: url(https://nepolabo.fans/lamy/dist/img/stamp_border.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 72px;
-    position: relative;
-    width: 90px;
-}
-
-.stamp-inner {
-    overflow: hidden;
-    position: relative;
-    top: 6px;
-    left: 7px;
-    bottom: 26px;
-    right: 6px;
-    width: 86%;
-    height: 80%;
-    background-color: lightblue;
-}
-
-.stamp-inner[data-code="us"],
-.stamp-inner[data-code="it"]{
-    background-color: cornflowerblue;
-}
-
-.stamp-inner[data-code="jp"]{
-    background-color: darkseagreen;
-}
-
-.stamp-inner[data-code="id"]{
-    background-color: lightseagreen;
-}
-
-.stamp-inner[data-code="in"],
-.stamp-inner[data-code="br"]{
-    background-color: yellowgreen;
-}
-
-.stamp-inner[data-code="cn"]{
-    background-color: steelblue;
-}
-
-.stamp-inner[data-code="sa"],
-.stamp-inner[data-code="ca"]{
-    background-color: burlywood;
-}
-
-.stamp-inner[data-code="ca"] .stamp-amt {
-    font-size: 1rem;
-}
-
-.stamp-inner[data-code="ca"] .stamp-amt::before{
-    content: "P";
-    color: burlywood;
-    font-family: auto;
-    position: absolute;
-    left: 4px;
-    top: 3px;
-}
-
-.stamp-inner[data-code="ar"],
-.stamp-inner[data-code="de"],
-.stamp-inner[data-code="au"]{
-    background-color: silver;
-}
-
-.stamp-inner[data-code="kz"],
-.stamp-inner[data-code="nz"]{
-    background-color: lavender;
-}
-
-.stamp-inner[data-code="gb"],
-.stamp-inner[data-code="tw"]{
-    background-color: plum;
-}
-
-.stamp-inner[data-code="mx"],
-.stamp-inner[data-code="ph"]{
-    background-color: goldenrod;
-}
-
-.stamp-inner[data-code="th"] {
-    background-color: palevioletred;
-}
-
-.stamp-inner[data-code="sg"]{
-    background-color: cadetblue;
-}
-
-.stamp-inner[data-code="hk"],
-.stamp-inner[data-code="vn"]{
-    background-color: lightgrey;
-}
-
-
-.stamp-amt {
-    font-family: "Merriweather";
-    font-size: 0.7rem;
-    opacity: 0.7;
-    position: absolute;
-    right: 3px;
-    top: 0;
-    z-index: 20;
-}
-
-.stamp-deco {
-    background-image: url(https://nepolabo.fans/lamy/dist/img/heart.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.stamp-inner[data-code] .stamp-deco {
-    background-image: url(https://nepolabo.fans/lamy/dist/img/sak.png);
-    background-position: left;
-    bottom: 6px;
-    right: -10px;
-    width: 3rem;
-    height: 2.5rem;
-}
-
-section.postcards:nth-child(even) .stamp-inner[data-code="jp"] .stamp-deco {
-    background-image: url(https://nepolabo.fans/lamy/dist/img/chrys.png);
-}
-
-.stamp-inner[data-code="us"] .stamp-deco,
-.stamp-inner[data-code="ca"] .stamp-deco,
-.stamp-inner[data-code="au"] .stamp-deco,
-.stamp-inner[data-code="nz"] .stamp-deco,
-.stamp-inner[data-code="de"] .stamp-deco,
-.stamp-inner[data-code="fr"] .stamp-deco,
-.stamp-inner[data-code="gb"] .stamp-deco {
-    background-image: url(https://nepolabo.fans/lamy/dist/img/rose.png);
-}
-
-.stamp-inner[data-code="ph"] .stamp-deco,
-.stamp-inner[data-code="my"] .stamp-deco {
-    background-image: url(https://nepolabo.fans/lamy/dist/img/hib2.png);
-}
-
-.stamp-inner[data-code="id"] .stamp-deco,
-.stamp-inner[data-code="tw"] .stamp-deco {
-    background-image: url(https://nepolabo.fans/lamy/dist/img/hib1.png);
-}
-
-.stamp-inner[data-code="sg"] .stamp-deco,
-.stamp-inner[data-code="th"] .stamp-deco,
-.stamp-inner[data-code="vn"] .stamp-deco  {
-    background-image: url(https://nepolabo.fans/lamy/dist/img/gerb.png);
-}
-
-.stamp-inner[data-code="in"] .stamp-deco,
-.stamp-inner[data-code="kr"] .stamp-deco,
-.stamp-inner[data-code="br"] .stamp-deco {
-    background-image: url(https://nepolabo.fans/lamy/dist/img/cos.png);
-}
-
-.stamp-inner[data-code="ar"] .stamp-deco,
-.stamp-inner[data-code="es"] .stamp-deco,
-.stamp-inner[data-code="it"] .stamp-deco,
-.stamp-inner[data-code="mx"] .stamp-deco {
-    background-image: url(https://nepolabo.fans/lamy/dist/img/sun.png);
-}
-
-.stamp-inner[data-code="dk"] .stamp-deco,
-.stamp-inner[data-code="fi"] .stamp-deco,
-.stamp-inner[data-code="ru"] .stamp-deco {
-    background-image: url(https://nepolabo.fans/lamy/dist/img/flake.png);
 }
 
 .country-name {
