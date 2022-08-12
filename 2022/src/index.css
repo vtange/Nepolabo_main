@@ -855,6 +855,33 @@ body:not(.showMessages) #messages-popup {
         height:90px;
         width:90px;
     }
+    .heartfirework {
+        height:100px;
+        width:100px;
+    }
+    .heartfireworkwithcolorchange {
+        height:90px;
+        width:90px;
+    }
+    .nefirework {
+        height:100px;
+        width:100px;
+    }
+
+    .pofirework {
+        height:100px;
+        width:100px;
+    }
+
+    .rafirework {
+        height:100px;
+        width:100px;
+    }
+
+    .bofirework {
+        height:100px;
+        width:100px;
+    }
 
     .sparkle,
     .sparkle1,
