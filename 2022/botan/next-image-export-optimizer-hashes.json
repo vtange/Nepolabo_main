@@ -36,8 +36,8 @@
     "sweeper.png": "MTDMmVj7QxrfNBAKJmbY4ayGDm2lQkj5swq2rMG+NWc=",
     "to-top-en.png": "I28JpMZL2OTRLmGO+v5QCgzrucSyFcJ-BZUyCE9Oimc=",
     "to-top-jp.png": "YJjWMW5WixE7fPa5a+IUjeY0rdTfnxkoYJhhftx3HPA=",
-    "state_running.png": "1VGoBBIyD-45Kb2bawxFk3Y7KAxVll4kMAXtCx+CEzk=",
-    "state_success.png": "EVswWTm-lqzjSix70tuYpe+UXxMOHNSL+W5jHks9hXM=",
+    "state_running.png": "oFBNj4b2HG4twecfrvFBOz9h3tQTl2pmC0hEE+995wo=",
+    "state_success.png": "LZEoU2DVD-7y1FMDjJ7WUYTwArQ9ZPKOFItPIN1g-4A=",
     "tile_hidden.png": "clqpaal1iAHTnMNn-u-58cIGRhOF1ZTBlpbMRsYB098=",
     "tile_hidden_flag.png": "yPODMlz93aRQJ1ksH7UlrZK-FOue-rzeRVq9yFnPw0M=",
     "tile_hidden_question.png": "6EYx8GZWeEidDeXCupPtxz5pWsu6iVrlrOENAYIFlkE=",
@@ -166,5 +166,12 @@
     "frame2_narrow.png": "y50OMCqt0n6qWAQZUYX1CUB+ZyfCj0PSiQqR+dhAl2I=",
     "frame2_square.png": "CPxxFAx+uXXYjMN7x6-FyyhT73Tv9sydzSAxGpmIyGM=",
     "frame2_wide.png": "hfJ2njSTBkD-wpjWbbPtiGQWjDPwD3mfvEd2q1Ar-t4=",
-    "Logo.png": "O-RiA-eHaU74IET1NomwfrlJA68ZQct6rSGD-pv0wLg="
+    "Logo.png": "9oztg0LhnmLFX3YI0OLX9m6xJIHsKW8i8lmaXnHL1mc=",
+    "Munmai.png": "Ev82lxzB5xIP2qXod3eO3o8Z+NFjcfvJsEH-BtRoS-w=",
+    "大葉シェフ.jpg": "ItoCZOYsn8-qFMZRnQ-+p0xCCeugFz--AZGjnQBIh0w=",
+    "Thumbnail.png": "YdBQ+k4vWbZWiCnYAoaMfoxhaAWFut-mgbDyD1k1LkY=",
+    "home_landscape.png": "Oft1QGaPmg+R7ixoTatX4CfbwAvbLF0IbZCkTFQUhPM=",
+    "home_portrait.png": "ayBiNQ6HWtFQsem-+7cQKPob+QS0j8lRWGKPUwdAB04=",
+    "home_square.png": "xkK7uYYi9hJtZiB+otlNF0bH3tgHF+XTMFS2P8xQtP8=",
+    "state_fail.png": "+wV96aj8ChQLSltHk4Und0qVtIjaiUoYzzdIaxorLMA="
 }
