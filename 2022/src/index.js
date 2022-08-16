@@ -163,7 +163,7 @@ sky.addEventListener("click", function(e){
 
 // countdown stuff
 var debutN = 1628780400000+31557600000-10800000;
-var debutP = 1660597200000+3600000*9; //6AM japan time + 9 more hrs
+var debutP = 1660597200000+3600000*11; //6AM japan time + 9 more hrs
 var debutL = 1628694000000+31557600000-10800000;
 var debutB = 1628866800000+31557600000+3600000*12;
 var debuts = [debutN,debutP,debutL,debutB];
