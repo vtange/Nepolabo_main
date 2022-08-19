@@ -1,22 +1,22 @@
 [[redirects]]
 from = "/nene"
-to = "/2021/nene/"
-status = 200
+to = "/2021/nene"
+status = 301
 
 [[redirects]]
 from = "/polka"
-to = "/2021/polka/"
-status = 200
+to = "/2021/polka"
+status = 301
 
 [[redirects]]
 from = "/lamy"
-to = "/2021/lamy/"
-status = 200
+to = "/2021/lamy"
+status = 301
 
 [[redirects]]
 from = "/botan"
-to = "/2021/botan/"
-status = 200
+to = "/2021/botan"
+status = 301
 
 [[redirects]]
 from = "/2021/polka/*"
