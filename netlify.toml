@@ -1,21 +1,21 @@
 [[redirects]]
 from = "/nene/*"
-to = "/2021/nene/index.html"
+to = "/2021/nene/*"
 status = 200
 
 [[redirects]]
 from = "/polka/*"
-to = "/2021/polka/index.html"
+to = "/2021/polka/*"
 status = 200
 
 [[redirects]]
 from = "/lamy/*"
-to = "/2021/lamy/index.html"
+to = "/2021/lamy/*"
 status = 200
 
 [[redirects]]
 from = "/botan/*"
-to = "/2021/botan/index.html"
+to = "/2021/botan/*"
 status = 200
 
 [[redirects]]
