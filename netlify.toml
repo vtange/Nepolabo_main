@@ -19,6 +19,26 @@ to = "/2021/botan"
 status = 301
 
 [[redirects]]
+from = "/nene/:file"
+to = "/2021/nene/:file"
+status = 301
+
+[[redirects]]
+from = "/polka/:file"
+to = "/2021/polka/:file"
+status = 301
+
+[[redirects]]
+from = "/lamy/:file"
+to = "/2021/lamy/:file"
+status = 301
+
+[[redirects]]
+from = "/botan/:file"
+to = "/2021/botan/:file"
+status = 301
+
+[[redirects]]
 from = "/2021/polka/*"
 to = "/2021/polka/index.html"
 status = 200
