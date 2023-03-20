@@ -185,6 +185,7 @@ canvas {
   animation: cleanupTextAnim 1.2s normal forwards linear;
   color:white;
   font-size: 88px;
+  font-family: serif;
   left:50%;
   margin: 0;
   position: absolute;
@@ -285,6 +286,7 @@ canvas {
     margin: auto;
     margin-top: 10vh;
     max-width: 90vw;
+    visibility: hidden;
     width: 400px;
 }
 
