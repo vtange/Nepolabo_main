@@ -423,3 +423,10 @@ canvas {
 #loading:not(.bgmLoaded) .loading-text:last-child {
   display: none;
 }
+
+#disclaimer {
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
