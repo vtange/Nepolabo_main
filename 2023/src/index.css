@@ -232,7 +232,11 @@ body.showMessages .FULLSCRN {
     border-radius: 10px;
     color: teal;
     cursor: pointer;
+}
+
+#lang-btn {
     font-size: 1.2rem;
+    font-weight: 700;
     height: 48px;
     width: 60px;
 }
@@ -251,9 +255,7 @@ body.showMessages .FULLSCRN {
     max-width: 56px;
 }
 
-.text-btn:hover,
 .btn-icon:hover {
-    color: black;
     filter: brightness(1.5);
 }
 
@@ -411,9 +413,41 @@ body:not(.showMessages) #messages-popup {
     pointer-events: none;
 }
 
+#title span {
+    color:white;
+    font-size: 1.25rem;
+}
+
+.who-nepolabo {
+    font-weight: 700;
+    position: absolute;
+    right: -40px;
+    user-select: none;
+    top: -25px;
+    transform: rotate(25deg);
+}
+
+.who-nepolabo:active {
+    transform: rotate(25deg) translateY(2px);
+}
+
+#title h1 {
+    background-color: rgba(20,20,56, 0.7);
+    border-radius: 16px;
+    max-width: calc(100vw - 164px);
+    margin: auto;
+    margin-top: 8rem;
+    padding: 8px 16px 12px;
+    position: relative;
+    text-align: center;
+}
+
 @media (min-width: 450px) {
     section.postcards {
         column-count: 1;
+    }
+    #title span {
+        font-size: 1.65rem;
     }
 }
 
@@ -432,6 +466,12 @@ body:not(.showMessages) #messages-popup {
     .user-twitter {
         font-size: 0.95rem;
     }
+    #title h1 {
+        max-width: calc(100vw - 300px);
+    }
+    #title span {
+        font-size: 2rem;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -447,6 +487,9 @@ body:not(.showMessages) #messages-popup {
      }
      .user-twitter {
          font-size: 1rem;
+     }
+     #title span {
+         font-size: 2.4rem;
      }
  }
 
@@ -542,12 +585,13 @@ body:not(.showMessages) #messages-popup {
   }
 
   .lightstick {
-    animation: penlight 2s infinite ease-in-out;
+    animation: penlight 3s infinite ease-in-out;
     background-image: url(./penlight_white.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     transition: all 1s ease;
+    transform-origin: 50% 100%;
     height: 240px;
     width: 5vw;
   }
@@ -592,10 +636,10 @@ body:not(.showMessages) #messages-popup {
 }
 
   @keyframes penlight {
-      0% {transform: rotate(45deg);
+      0% {transform: rotate(30deg);
       }
-      50% {transform: rotate(-45deg);
+      50% {transform: rotate(-30deg);
       }
-      100% {transform: rotate(45deg);
+      100% {transform: rotate(30deg);
       }
     }
