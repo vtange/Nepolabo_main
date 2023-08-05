@@ -55,8 +55,11 @@ body[data-swaplang="EN"] span[data-swaplang="JP"] {
 body:not(.showCredits) #credits-popup {
     display: none;
 }
+body:not(.showIntro) #nepolabo-popup {
+    display: none;
+}
 
-.credits, #disclaimer {
+.credits, #disclaimer, #nepolabo-popup {
     color: white;
 }
 
@@ -288,9 +291,14 @@ body:not(.showMessages) #messages-popup {
     box-sizing: border-box;
     padding: 5%;
     position: absolute;
+    min-height: 100vh;
     user-select: none;
     width:100%;
     z-index: 2;
+}
+
+#credits-popup h4 {
+    margin-bottom: 2px;
 }
 
 .postcard, .picturecard {
@@ -318,10 +326,28 @@ body:not(.showMessages) #messages-popup {
     margin-right: 5px;
 }
 
+.introcards .profile-pic {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.introcards .profile-pic img {
+    width: 100%;
+}
+
+.hotlinks {
+    max-height: 80px;
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+}
+
 .messages p {
     white-space: pre-wrap;
 }
 
+.introcards .messages,
 .messages > div {
     margin-block-start: 1rem;
     margin-block-end: 1rem;
@@ -368,6 +394,15 @@ body:not(.showMessages) #messages-popup {
     flex-wrap: wrap;
     margin-left: 1rem;
     max-width: calc(100% - 1rem);
+}
+
+.introcards .user-info {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-info b {
+    text-decoration: underline;
 }
 
 .user-name {
@@ -454,6 +489,9 @@ body:not(.showMessages) #messages-popup {
 /* medium */
 @media (min-width: 750px) {
     section.postcards {
+        column-count: 2;
+    }
+    section.introcards {
         column-count: 2;
     }
     .messages p {

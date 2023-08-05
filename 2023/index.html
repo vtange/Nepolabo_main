@@ -81,7 +81,7 @@
 
         <div class="FULLSCRN" id="title">
                 <h1>
-                    <button class="who-nepolabo text-btn">
+                    <button class="who-nepolabo text-btn" onclick="toggleNepolaboPopup(true)">
                         <span data-swaplang="EN">Who is Nepolabo?</span><span data-swaplang="JP">ねぽらぼとは？</span>
                     </button>
                     <span data-swaplang="EN">Happy 3rd Anniversary,<br>Nepolabo!</span><span data-swaplang="JP">ねぽらぼのみんな、<br>三周年おめでとう！</span>
@@ -92,6 +92,123 @@
             <div class="close-button" onclick="toggleMessagesPopup(false)">×</div>
             <div id="cards"></div>
         </div>
+
+        <section class="popup" id="nepolabo-popup">
+            <div class="close-button" onclick="toggleNepolaboPopup(false)">×</div>
+            <section class="introcards">
+                <div oshi="Momosuzu Nene" class="postcard" style="color: rgb(255, 208, 177);">
+                    <div class="postcard-header">
+                        <div class="user-info">
+                            <div class="profile-pic">
+                                <img src="src/ne.jpg"/>
+                            </div>
+                            <h1><span data-swaplang="EN">Momosuzu <b>Ne</b>ne</span><span data-swaplang="JP">桃鈴<b>ね</b>ね</span></h1>
+                            <div class="hotlinks">
+                                <a href="https://www.youtube.com/@MomosuzuNene">
+                                    <img class="btn-icon" src="src/yttrans.png"/>
+                                </a>
+                                <a href="https://twitter.com/momosuzunene">
+                                    <img class="btn-icon" src="src/twtrans.png"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="messages">
+                        <span data-swaplang="EN">
+                            <p>Hololive 5th Generation Vtuber. She is a cheerful idol who loves to dance and sing. Does FPS (VALORANT, APEX) streams, singing streams, Minecraft streams, and chat streams.</p>
+                        </span>
+                        <span data-swaplang="JP">
+                            <p>ホロライブ５期生所属VTuber。歌もダンスも好きで明るいアイドルである。配信内容は：FPS（VALORANT、APEX)、歌枠、マイクラ、雑談
+                            </p>
+                        </span>
+                    </div>
+                </div>
+
+                <div oshi="Omaru Polka" class="postcard" style="color: rgb(255, 183, 199);">
+                    <div class="postcard-header">
+                        <div class="user-info">
+                            <div class="profile-pic">
+                                <img src="src/po.jpg"/>
+                            </div>
+                            <h1><span data-swaplang="EN">Omaru <b>Po</b>lka</span><span data-swaplang="JP">尾丸<b>ポ</b>ルカ</span></h1>
+                            <div class="hotlinks">
+                                <a href="https://www.youtube.com/@OmaruPolka">
+                                    <img class="btn-icon" src="src/yttrans.png"/>
+                                </a>
+                                <a href="https://twitter.com/omarupolka">
+                                    <img class="btn-icon" src="src/twtrans.png"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="messages">
+                        <span data-swaplang="EN">
+                            <p>Hololive 5th Generation Vtuber. An entertainer with many voices and wild swings of energy. Streams many kinds of games (loves visual novels, grinding games), singing streams, chat streams, ASMR (for channel members)</p>
+                        </span>
+                        <span data-swaplang="JP">
+                            <p>ホロライブ５期生所属VTuber。色んな声を持つテンションの上下が激しいエンターテイナー。配信内容は：ゲーム（多様、VN＋作業系は好き）、歌枠、雑談、ASMR（メン限）
+                            </p>
+                        </span>
+                    </div>
+                </div>
+
+                <div oshi="Yukihana Lamy" class="postcard" style="color: rgb(216, 240, 255);">
+                    <div class="postcard-header">
+                        <div class="user-info">
+                            <div class="profile-pic">
+                                <img src="src/ra.jpg"/>
+                            </div>
+                            <h1><span data-swaplang="EN">Yukihana <b>La</b>my</span><span data-swaplang="JP">雪花<b>ラ</b>ミィ</span></h1>
+                            <div class="hotlinks">
+                                <a href="https://www.youtube.com/@YukihanaLamy">
+                                    <img class="btn-icon" src="src/yttrans.png"/>
+                                </a>
+                                <a href="https://twitter.com/yukihanalamy">
+                                    <img class="btn-icon" src="src/twtrans.png"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="messages">
+                        <span data-swaplang="EN">
+                            <p>Hololive 5th Generation Vtuber. A snow elf who loves Japanese sake and takes her work seriously. Does many chat streams, drinking streams, movie watchalongs, gaming streams, and ASMR</p>
+                        </span>
+                        <span data-swaplang="JP">
+                            <p>ホロライブ５期生所属VTuber。どんな仕事でも真剣にする日本酒好きなスノーエルフ。配信内容は：雑談、晩酌、映画同時視聴、ゲーム、ASMR
+                            </p>
+                        </span>
+                    </div>
+                </div>
+
+                <div oshi="Shishiro Botan" class="postcard" style="color: rgb(215, 255, 225);">
+                    <div class="postcard-header">
+                        <div class="user-info">
+                            <div class="profile-pic">
+                                <img src="src/bo.jpg"/>
+                            </div>
+                            <h1><span data-swaplang="EN">Shishiro <b>Bo</b>tan</span><span data-swaplang="JP">獅白<b>ぼ</b>たん</span></h1>
+                            <div class="hotlinks">
+                                <a href="https://www.youtube.com/@ShishiroBotan">
+                                    <img class="btn-icon" src="src/yttrans.png"/>
+                                </a>
+                                <a href="https://twitter.com/shishirobotan">
+                                    <img class="btn-icon" src="src/twtrans.png"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="messages">
+                        <span data-swaplang="EN">
+                            <p>Hololive 5th Generation Vtuber. A laid-back white lioness who is good at games and technically proficient. Does many gaming streams (especially FPS, horror or survival games), including Minecraft streams</p>
+                        </span>
+                        <span data-swaplang="JP">
+                            <p>ホロライブ５期生所属VTuber。技術もゲームも得意気軽なホワイトライオン。配信内容は：ゲーム（特にFPS,ホラー、サバイバル系）、マイクラ
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </section>
+        </section>
 
         <section class="popup" id="credits-popup">
             <div class="close-button" onclick="toggleCreditsPopup(false)">×</div>

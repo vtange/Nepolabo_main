@@ -89,6 +89,10 @@ function toggleCreditsPopup(bool) {
     document.body.classList.toggle("showCredits",bool);
 }
 
+function toggleNepolaboPopup(bool) {
+    document.body.classList.toggle("showIntro",bool);
+}
+
 // countdown stuff
 var debutN = 1691852400000;
 var debutP = 1692111600000;
