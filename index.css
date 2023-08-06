@@ -16,6 +16,7 @@ ul {
 }
 
 body, #main {
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
@@ -24,20 +25,23 @@ body, #main {
     width: fit-content;
 }
 
-#list {
+.list {
     display: flex;
     flex-direction: column;
     padding: 8px;
     position: relative;
     left: 0;
     right: 0;
-    margin-top: 1rem;
-    min-height: 100vh;
     transition: transform 0.3s ease;
 }
 
+.list:first-child {
+    margin-top: 1rem;
+}
+
 .proj-entry {
-    margin: 12px auto;
+    margin: 12px;
+    width: 100%;
 }
 
 .proj-title {
@@ -49,25 +53,25 @@ body, #main {
     width: 100%;
 }
 
-.square {
+.button {
     box-shadow: 0.15rem 0.15rem 0.6rem darkslateblue;
     border-radius: 39px;
     height: 15rem;
     position: relative;
     overflow: hidden;
-    width: 15rem;
+    width: 100%;
 }
 
-.square:active {
+.button:active {
     transform: translateY(3px);
     box-shadow: 0.05rem 0.05rem 0.3rem darkslateblue;
 }
 
-.square:hover {
+.button:hover {
     filter: brightness(1.1);
 }
 
-.square:before {
+.button:before {
     background-color: rgba(255, 184, 150,0.1);
     border: 0.2rem ridge rgba(255, 184, 150, 0.7);
     box-sizing: border-box;
@@ -77,51 +81,63 @@ body, #main {
     width: 100%;
     z-index: -1;
 }
-.square-bg {
+
+.square {
+    width: 15rem;
+}
+
+.bg {
     /* background color to hide the :before stuff above.*/
     background-color: #1b171f;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 100%;
     width: 100%;
 }
 
-a[aria-label="Nepolabo Project 2022"] .square-bg {
+a[aria-label="Nepolabo Project 2023"] .bg {
+    background-image:url('./art/23.jpg');
+}
+
+a[aria-label="Nepolabo Project 2022"] .bg {
     background-image:url('./art/22.png');
 }
 
-a[aria-label="Nepolabo Project 2021"] .square-bg {
+a[aria-label="Nepolabo Project 2021"] .bg {
     background-image:url('./art/21.png');
 }
 
 /* iPhone SE styling ^ */
 /* 2nd smallest */
 @media (min-width: 450px) {
-    .square {
+    .button {
         height: 20rem;
+    }
+    .square {
         width: 20rem;
     }
 }
 
 /* medium */
 @media (min-width: 600px) {
-    .square {
+    .button {
         height: 25rem;
+    }
+    .square {
         width: 25rem;
     }
 }
 
 /* lrg */
 @media (min-width: 900px) {
-    #list {
+    .list {
         flex-direction: row;
     }
-
-    .proj-entry {
-        margin: 12px;
+    .button {
+        height: 30rem;
     }
     .square {
-        height: 30rem;
         width: 30rem;
     }
 }
