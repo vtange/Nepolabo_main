@@ -42,7 +42,10 @@ function check_webgl() {
         return false;
     }
 };
-document.getElementById("nojs-cover").style.display = "none";
+var nojs = document.getElementById("nojs-cover");
+if(nojs){
+   nojs.style.display = "none";
+}
 //WebGL
 if(!check_webgl()) {
     return;
