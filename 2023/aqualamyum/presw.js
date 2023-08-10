@@ -44,7 +44,7 @@ function check_webgl() {
 };
 var nojs = document.getElementById("nojs-cover");
 if(nojs){
-   nojs.style.display = "none";
+    nojs.style.display = "none";
 }
 //WebGL
 if(!check_webgl()) {
