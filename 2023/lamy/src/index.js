@@ -123,6 +123,12 @@ var data2 = [
   "url":"food/min/bananaraisinbread_.jpg",
  },
 
+ {"food_name":"3rd Anniversary Cake",
+ "food_name_jp":"３週年記念ケーキ",
+  "name":"X-Kill/Mau",
+  "twit":"MauCaVel",
+  "url":"food/min/lastcake_.jpg",
+ },
  {"food_name":"Sea Life Cookies",
  "food_name_jp":"魚類クッキー",
   "name":"Freak Video Gamer",
