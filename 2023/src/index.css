@@ -297,7 +297,12 @@ body:not(.showMessages) #messages-popup {
     z-index: 2;
 }
 
+#credits-popup h1, #credits-popup h2 {
+    padding: 16px 0 0 16px;
+}
+
 #credits-popup h4 {
+    border-bottom: 1px solid darkmagenta;
     margin-bottom: 2px;
 }
 
