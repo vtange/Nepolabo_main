@@ -80,86 +80,96 @@ if (data) {
 
 //youll need an array of images.
 // loop through and then mount to root2
-var root2 = document.getElementById('cards');
+var root2 = document.getElementById('cards2');
 
 var data2 = [
  {"food_name":"Pork Udon",
   "name":"X-Kill/Mau",
   "twit":"MauCaVel",
-  "url":"",
+  "url":"food/min/porkudon_.jpg",
  },
  {"food_name":"Strawberry Ice Cream & Cherry Pie",
   "name":"X-Kill/Mau",
   "twit":"MauCaVel",
-  "url":"",
+  "url":"food/min/icecreamcherrypie_.jpg",
  },
  {"food_name":"Cheese Bread",
   "name":"X-Kill/Mau",
   "twit":"MauCaVel",
-  "url":"",
+  "url":"food/min/cheesebread_.jpg",
  },
 
  {"food_name": "Egyptian Nile White Fish",
   "name":"X-Kill/Mau",
   "twit":"MauCaVel",
-  "url":"",
+  "url":"food/min/whitenilefriedtilapia_.jpg",
  },
 
  {"food_name":"Fish and cheese sandwich with chipotle ranch and croissant bread",
   "name":"X-Kill/Mau",
   "twit":"MauCaVel",
-  "url":"",
+  "url":"food/min/fishcheesecrossaintsandwich_.jpg",
  },
 
  {"food_name":"Banana and Raisin bread",
   "name":"X-Kill/Mau",
   "twit":"MauCaVel",
-  "url":"",
+  "url":"food/min/bananaraisinbread_.jpg",
  },
 
  {"food_name":"Sea Life Cookies",
   "name":"Freak Video Gamer",
   "twit":"Alan0Bits",
-  "url":"",
+  "url":"food/min/sealifecookies_.jpg",
  },
  {"food_name":"Lemon Cookie Cake",
   "name":"Freak Video Gamer",
   "twit":"Alan0Bits",
-  "url":"",
+  "url":"food/min/lemoncakecookie_.jpg",
  },
  {"food_name":"Blue Candy Glacier Martini",
   "name":"JorgeRR",
   "twit":"JorgeRR3168",
-  "url":"",
+  "url":"food/min/bluecandyglaciermartini_.jpg",
  },
  {"food_name":"Daifuku Blue Hot Chocolate",
   "name":"JorgeRR",
   "twit":"JorgeRR3168",
-  "url":"",
+  "url":"food/min/daifukuhotchoco_.jpg",
  },
  {"food_name":"Fishbowl Soda",
   "name":"JorgeRR",
   "twit":"JorgeRR3168",
-  "url":"",
+  "url":"food/min/fishbowlsoda_.jpg",
  },
  {"food_name":"Purple Berry Snowball Float",
   "name":"JorgeRR",
   "twit":"JorgeRR3168",
-  "url":"",
+  "url":"food/min/purpleberrysnowballfloat_.jpg",
  },
  {"food_name":"Sea Tea Lemonade",
   "name":"JorgeRR",
   "twit":"JorgeRR3168",
-  "url":"",
+  "url":"food/min/seatealemonade_.jpg",
  }
 ]
 if (data2) {
-    // var cookingPhotos = { view: function(){  return m() } }
-    // m.mount(root2, cookingPhotos);
-    // let gallery_b = new SimpleLightbox('.msg-art a', {disableScroll: false});
-    // gallery_b.on('error.simplelightbox', function (e) {
-    //     console.log(e); // some usefull information
-    // });
+    var cookingPhotos = { view: function(){
+        return m("section.postcards", data2.map(o =>
+            m(".foodcard",{style: {"background-position": Math.random()*100+"% "+Math.random()*100+"%" }},
+                [m(".picturecard-header",
+                        m(".user-info",
+                            [m("span.user-name", o.food_name),
+                            (o.twit?m("span.user-twitter", "by @"+o.twit):"")])),
+                 (o.url ? m(".msg-art", m('a[href="' + o.url.replace(/\_\./g, ".").replace(/food(.*)\/min/g, "food$1") + '"]', m('img[src="' + o.url + '"][alt=""][title=""]'))) : "")
+                ])
+        ));
+     } }
+    m.mount(root2, cookingPhotos);
+    let gallery_b = new SimpleLightbox('.foodcard .msg-art a', {disableScroll: false});
+    gallery_b.on('error.simplelightbox', function (e) {
+        console.log(e); // some usefull information
+    });
 }
 
 

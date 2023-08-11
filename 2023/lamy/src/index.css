@@ -170,6 +170,11 @@ body.showMessages .white-wave {
     width: 60vw;
 }
 
+.food-container {
+    margin: auto;
+    width: 90vw;
+}
+
 @media (min-width: 1200px) {
     .aqua-container {
         border-radius: 18px;
@@ -389,6 +394,26 @@ body:not(.showMessages) #messages-popup {
     line-height: 1.5;
     margin-bottom: 3.7rem;
     padding: 20px 10px;
+}
+
+.foodcard {
+    box-shadow: 5px 8px 20px -5px rgba(10, 10, 10, 0.75);
+    border: 10px solid rgba(255,255,255,0.4);
+    border-radius: 16px;
+    background-color: rgba(0,0,0,0.6);
+    background-size: 160%;
+    break-inside: avoid;
+    color: rgb(20,20,20);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 3.7rem;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.foodcard .user-twitter {
+    color:cyan;
 }
 
 .profile-pic {
