@@ -94,11 +94,11 @@ function toggleNepolaboPopup(bool) {
 }
 
 // countdown stuff
-var debutN = 1691852400000+1000*60*60*24;
-var debutP = 1692111600000+1000*60*60*24;
-var debutL = 1691766000000+1000*60*60*24;
-var debutB = 1691938800000+1000*60*60*24;
-var debutA = 1692000000000+1000*60*60*24;
+var debutN = 1691852400000;
+var debutP = 1692111600000;
+var debutL = 1691766000000;
+var debutB = 1691938800000;
+var debutA = 1692000000000;
 var debuts = [debutN,debutP,debutL,debutB];
 var nplbClassNames = ["nene","polka","lamy","botan"];
 function secondsToHms(d) {
@@ -121,6 +121,8 @@ function runTimer(){
             el.setAttribute("done","true");
             //previousElementSibling MUST be <button>
             el.previousElementSibling.disabled = false;
+        }
+        if(timeleft+86400000 < 0) {
             bg.classList.remove(nplbClassNames[i]);
         } else if(!bg.classList.contains(nplbClassNames[i])) {
             bg.classList.add(nplbClassNames[i]);
