@@ -122,7 +122,7 @@ function runTimer(){
             //previousElementSibling MUST be <button>
             el.previousElementSibling.disabled = false;
         }
-        if(timeleft+86400000 < 0) {
+        if(timeleft + (debutN-debutL)/1000 < 0) {
             bg.classList.remove(nplbClassNames[i]);
         } else if(!bg.classList.contains(nplbClassNames[i])) {
             bg.classList.add(nplbClassNames[i]);
