@@ -188,6 +188,14 @@ body.showMessages .FULLSCRN {
     left:-20px;
 }
 
+@media (max-width: 400px) {
+    .button-container {
+        transform: scale(0.8);
+        left: 0;
+        top:0;
+    }
+ }
+
 .btn {
     border: 2px outset #66cdaa;
     border-radius: 10px;
@@ -458,19 +466,6 @@ body:not(.showMessages) #messages-popup {
     font-size: 1.25rem;
 }
 
-.who-nepolabo {
-    font-weight: 700;
-    position: absolute;
-    right: -40px;
-    user-select: none;
-    top: -25px;
-    transform: rotate(25deg);
-}
-
-.who-nepolabo:active {
-    transform: rotate(25deg) translateY(2px);
-}
-
 #title h1 {
     background-color: rgba(20,20,56, 0.7);
     border-radius: 16px;
@@ -536,7 +531,6 @@ body:not(.showMessages) #messages-popup {
      }
  }
 
-
  @media (min-width: 2000px) {
     section.postcards {
          column-count: 4;
@@ -549,13 +543,60 @@ body:not(.showMessages) #messages-popup {
      }
  }
 
- @media (max-width: 400px) {
-    .button-container {
-        transform: scale(0.8);
-        left: 0;
-        top:0;
+.header-extras {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -40px;
+    top: -25px;
+}
+
+#nepolabo-ad-link-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nepolabo-ad-link-btn > span {
+    border: 2px solid midnightblue;
+    background-color: white;
+    border-radius: 50%;
+    color: darkslateblue;
+    font-size: 0.75em;
+    padding: 0.5rem;
+    transform: translate(48px, -20px);
+}
+
+#nepolabo-ad-link-btn .btn-icon {
+    max-width: 100px;
+    min-width: 50px;
+    transform: translateX(48px);
+}
+
+#nepolabo-ad-link-btn,
+.who-nepolabo {
+    color:white;
+    font-weight: 700;
+    text-decoration: none;
+    transform: rotate(25deg);
+    user-select: none;
+}
+
+#nepolabo-ad-link-btn:active,
+.who-nepolabo:active {
+    transform: rotate(25deg) translateY(2px);
+}
+
+@media (max-width: 750px) {
+    #nepolabo-ad-link-btn {
+        transform: rotate(25deg) scale(0.85);
     }
- }
+  }
+@media (max-width: 450px) {
+    #nepolabo-ad-link-btn {
+        transform: rotate(25deg) scale(0.7);
+    }
+  }
 
  @keyframes sparkle {
    0% {

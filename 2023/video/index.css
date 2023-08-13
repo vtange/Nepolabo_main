@@ -25,6 +25,15 @@ body {
     padding: 8px;
 }
 
+#video-container p {
+    font-size: 16px;
+    margin: 2px;
+}
+
+#video-container p:last-of-type {
+    margin-bottom: 12px;
+}
+
 .video-container {
     background-color: black;
     overflow: hidden;
