@@ -64,6 +64,11 @@ to = "/2022/botan/index.html"
 status = 200
 
 [[redirects]]
+from = "/2023/polka/*"
+to = "/2023/polka/index.html"
+status = 200
+
+[[redirects]]
 from = "/2023/botan/*"
 to = "/2023/botan/index.html"
 status = 200
