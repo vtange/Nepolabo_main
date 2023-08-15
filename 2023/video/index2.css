@@ -8,6 +8,26 @@ body {
     min-height: 100vh;
 }
 
+.btn-icon {
+    cursor: pointer;
+    max-width: 56px;
+}
+
+.btn-icon:hover {
+    filter: brightness(1.5);
+}
+
+.icon-btn:disabled .btn-icon,
+.text-btn:active,
+.btn-icon:active {
+    filter: brightness(0.75);
+}
+
+.text-btn:active,
+.btn-icon:active {
+    transform: translateY(2px);
+}
+
 #video-container {
     background-color: rgba(0,0,0,0.39);
     border-radius: 12px;
