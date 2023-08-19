@@ -1,8 +1,17 @@
-var ytplayer;
+var ytplayer, ytplayer2;
 function onYouTubeIframeAPIReady() {
     if (document.getElementById("ytplayer")) {
         ytplayer = new YT.Player('ytplayer', {
             videoId: 'RoC3xl_HPo0',
+            playerVars: {
+                'playsinline': 1
+            },
+            events: {
+                'onStateChange': onPlayerStateChange
+            }
+            });
+        ytplayer2 = new YT.Player('ytplayer2', {
+            videoId: '605L0qQ3TSM',
             playerVars: {
                 'playsinline': 1
             },
