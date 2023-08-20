@@ -143,9 +143,23 @@ var ra = get("ra");
 var bo = get("bo");
 var nplb = [ne,po,ra,bo];
 runTimer();
+// window.setInterval(function(){
+//     runTimer();
+// },1000);
+var idx = 0;
+var slideshowArr = nplbClassNames.concat(["","aloe"]);
+var lastAdded = "";
 window.setInterval(function(){
-    runTimer();
-},1000);
+    if(slideshowArr[idx]) {
+        bg.classList.add(slideshowArr[idx]);
+    }
+    if(lastAdded) {
+        bg.classList.remove(lastAdded);
+    }
+    lastAdded = slideshowArr[idx];
+    idx = idx === 5 ? 0 : idx+1;
+},5000);
+
 // prevent click on mobile (which passes disabled button)
 nplb.forEach(function(el,i){
     el.parentElement.addEventListener("click", function(e){
